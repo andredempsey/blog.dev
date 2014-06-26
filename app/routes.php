@@ -15,6 +15,10 @@ Route::get('/', function (){
 	return View::make('temp.my-first-view');
 });
 
+Route::get('/rolldice', function (){
+	return 'You rolled: ' . mt_rand(1,6);
+});
+
 Route::get('/resume', function()
 {
         return "This is my resume.";
@@ -39,7 +43,7 @@ Route::get('/sayhello/{name}', function($name)
         	);
 
         return View::make('my-first-view')->with($data);
-        
+
         //method 2 for passing data to a view
         // return View::make('my-first-view')->with('name',$name);
     }
