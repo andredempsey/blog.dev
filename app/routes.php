@@ -15,7 +15,15 @@ Route::get('/', function (){
 	return View::make('temp.my-first-view');
 });
 
+Route::get('/rolldice', function (){
+    return mt_rand(1,6);
+});
+
 Route::get('/rolldice/{guess}', function ($guess){
+	if (!is_numeric($guess)) 
+	{
+		return Redirect::to('/rolldice');
+	}
     $data = array(
 	'roll' => mt_rand(1,6),
 	'guess' => $guess

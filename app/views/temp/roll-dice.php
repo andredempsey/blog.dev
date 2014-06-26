@@ -6,9 +6,9 @@
 </head>
 <body>
 	<?if ($guess==$roll) :?>
-	<?="You are correct!  You guessed $guess the roll was $roll"?>
+	<p style="color:green">You are correct!  You guessed <?= $guess; ?> the roll was <?= $roll; ?></p>
 	<?else :?>
-	<?="You are incorrect!  You guessed $guess but the roll was $roll"?>
-	<?endif?>
+	<p style="color:red">You are incorrect!  You guessed <?= $guess; ?> but the roll was <?= $roll; ?></p>
+	<?endif;?>
 </body>
 </html>
