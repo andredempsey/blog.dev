@@ -16,7 +16,10 @@ Route::get('/', function (){
 });
 
 Route::get('/rolldice', function (){
-	return 'You rolled: ' . mt_rand(1,6);
+    $data = array(
+	'roll' => mt_rand(1,6)
+	);
+	return View::make('temp.roll-dice')->with($data);
 });
 
 Route::get('/resume', function()
