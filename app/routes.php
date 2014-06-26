@@ -11,7 +11,11 @@
 |
 */
 
-Route::get('/', function()
+Route::get('/', function (){
+	return 'we are home';
+});
+
+Route::get('/resume', function()
 {
-	return View::make('hello');
+        return "This is my resume.";
 });
