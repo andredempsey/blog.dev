@@ -15,9 +15,10 @@ Route::get('/', function (){
 	return View::make('temp.my-first-view');
 });
 
-Route::get('/rolldice', function (){
+Route::get('/rolldice/{guess}', function ($guess){
     $data = array(
-	'roll' => mt_rand(1,6)
+	'roll' => mt_rand(1,6),
+	'guess' => $guess
 	);
 	return View::make('temp.roll-dice')->with($data);
 });

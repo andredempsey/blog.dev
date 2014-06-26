@@ -5,6 +5,10 @@
 	<title>Roll Dice</title>
 </head>
 <body>
-	You rolled: <?=$roll?>
+	<?if ($guess==$roll) :?>
+	<?="You are correct!  You guessed $guess the roll was $roll"?>
+	<?else :?>
+	<?="You are incorrect!  You guessed $guess but the roll was $roll"?>
+	<?endif?>
 </body>
 </html>
