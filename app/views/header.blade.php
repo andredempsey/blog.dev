@@ -1,5 +1,5 @@
 
-<img class="img-circle" id="andre" src="/img/Andre.jpg">
+<a href="{{{ action('HomeController@showResume')}}}"><img class="img-circle" id="andre" src="/img/Andre.jpg"></a>
 <div class="navbar-wrapper">
   <div class="container">
     <div class="navbar navbar-inverse navbar-static-top">
@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-        <a class="navbar-brand" href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a>
+        <a class="navbar-brand" href="{{{ action('HomeController@showPortfolio')}}}">Portfolio</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -19,10 +19,11 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="#Project1">Project 1</a></li>
-                <li><a href="#Project2">Project 2</a></li>
-                <li><a href="#Project3">Project 3</a></li>
-                <li><a href="#Project4">Project 4</a></li>
+                <li><a href="#Project1">One Page Project Manager</a></li>
+                <li><a href="#Project2">MILCON Manager</a></li>
+                <li><a href="#Project3">ATSO Event Pro</a></li>
+                <li><a href="#Project4">FindIt!</a></li>
+                <li><a href="#Project4">Superior Performers</a></li>
                 <li class="divider">--------</li>
                 <li><a href="#OtherProjects">Other Projects</a></li>
               </ul>

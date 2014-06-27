@@ -71,11 +71,5 @@
   </a>  
 </div>
 <!-- /.carousel -->
-<div id="summaryDescription">
-<h3>Summary</h3><p>Brief summary type of work <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta, est saepe esse porro mollitia minima facere odit molestias asperiores amet non ut incidunt quos tempore voluptatibus commodi dolor pariatur.</span>
-<span>Necessitatibus, porro, aut dolorem nisi libero excepturi ipsum consectetur repudiandae dicta veritatis voluptas tempore repellat eaque optio cum nesciunt repellendus minima earum quo vitae obcaecati unde recusandae perferendis temporibus reprehenderit!</span>
-<span>Quaerat, itaque provident vitae ad sit magnam inventore maxime nemo accusantium rerum. Optio adipisci blanditiis totam ipsa libero neque mollitia nesciunt quos provident magni. Officiis, quas ea harum deserunt expedita!</span>
-<span>Laboriosam, velit, voluptates hic dolorem perspiciatis harum voluptate explicabo quia delectus eaque error vitae animi molestiae doloribus quasi illum commodi ullam tempora ipsam earum ea blanditiis voluptatibus magnam voluptatem architecto.</span></p>
-</div>
 <hr>
 @stop

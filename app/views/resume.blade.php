@@ -30,117 +30,59 @@
 		<li class="bulletAccomplish">Developed local guidelines for measuring the Joint Base Common Output Level Standards (JB COLS) across three installations within the 502 ABW of Joint Base San Antonio (JBSA).</li>
 		<li class="bulletAccomplish">Developed MS Access solution to collect quarterly inputs and produce automated PowerPoint slide presentation for JB COLS management review meeting. </li>
 		<li class="bulletAccomplish">Analyzed migrated data from the Army’s Integrated Facilities System (IFS) database to the Air Forces ACES real property database.  Identified anomalies and coordinated with Air Force database experts to implement corrections.</li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
 	</ul>
 </p>
-      
-
-: , ; HQ 502 Air Base Wing
-Joint Base San Antonio, TX
-    
-Jun 08 to Jul 10: Operations Support Section Chief, HQ Air Education Training Command
-Randolph AFB, TX
-Led 9 program managers in providing policy and oversight to civil engineer organizations at
-12 Air Force bases with a total physical plant value of $17.5B.  Brought in as lead project manager responsible for planning, organizing, and establishing the civil engineering organization required to support the Department of Defense’s largest Joint Base; combined facility support functions from Lackland AFB, Randolph AFB, and Ft Sam Houston. Developed project management plan, budget plan, personnel training plan, and memorandum of agreement.
-
-
-<span class='companyName'><span class='location'></span> </span><span class='dates'></span><br>
-<span class='jobTitle'></span> 
+<span class='companyName'>HQ Air Education Training Command<span class='location'>Randolph AFB, TX</span> </span><span class='dates'>Jun 2008 to Jul 2010</span><br>
+<span class='jobTitle'>Operations Support Section Chief</span> 
 <p class='accomplishment'>
 	<ul class="accomplishments">
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
+		<li class="bulletAccomplish">Led 9 program managers in providing policy and oversight to civil engineer organizations at 12 Air Force bases with a total physical plant value of $17.5B.</li>
+		<li class="bulletAccomplish">Brought in as lead project manager responsible for planning, organizing, and establishing the civil engineering organization required to support the Department of Defense’s largest Joint Base; combined facility support functions from Lackland AFB, Randolph AFB, and Ft Sam Houston. Developed project management plan, budget plan, personnel training plan, and memorandum of agreement.
 	</ul>
 </p>
 
-
-
-Oct 09 to Apr 10: Facilities Engineer Team Chief, HQ Air Education Training Command
-Randolph AFB, TX Led 9 engineers in rapid development of 129 plans, designs, statements of work, and cost estimates worth $42M in essential infrastructure for the people of Iraq.  Projects included school refurbishments, canal repairs, road improvements, development plans, & bridges
-repairs among others.  Developed project management plan for transitioning a limited 90 engineer, decentralized engineering function to a centrally managed, 180 person countrywide engineering support organization which will execute plans for the withdrawal of forces from Iraq.
-
-
-<span class='companyName'><span class='location'></span> </span><span class='dates'></span><br>
-<span class='jobTitle'></span> 
+<span class='companyName'><span class='location'>JB Balad, Iraq</span> </span><span class='dates'>Oct 2009 to Apr 2010</span><br>
+<span class='jobTitle'>Facilities Engineer Team Chief</span> 
 <p class='accomplishment'>
 	<ul class="accomplishments">
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
+		<li class="bulletAccomplish">Led 9 engineers in rapid development of 129 plans, designs, statements of work, and cost estimates for school refurbishments, canal repairs, road improvements, development plans, bridges
+and other repairs worth $42M in essential infrastructure for the people of Iraq.</li>
+		<li class="bulletAccomplish">Developed project management plan for transitioning a limited 90 engineer, decentralized engineering function to a centrally managed, 180 person countrywide engineering support organization which will execute plans for the withdrawal of forces from Iraq.
+</li>
 	</ul>
 </p>
 
-Jun 05 to Jun 08: Chief, Housing Branch, HQ United States Air Forces Europe
-Ramstein AB, GE Led 5 housing and engineering professionals in managing over 18,000 military housing units. Responsible for developing and executing the $1.5B, 6-year operations, maintenance, lease
-and construction program for Air Force personnel in Europe.  Conducted extensive analyses on housing requirements for Airmen and their families in Europe.  Successfully fended off attempt to cut 1,000 on-base houses and saved two military housing construction projects worth $84M from Congressional cut.  Assumed lead project manager duties for $132M build to lease program, put project back on schedule, and secured $58M in loan guarantees from German government officials.  Developed project management plan, request for proposal, and strategy briefings.
-<span class='companyName'><span class='location'></span> </span><span class='dates'></span><br>
-<span class='jobTitle'></span> 
+<span class='companyName'>HQ United States Air Forces Europe<span class='location'>Ramstein AB, GE</span> </span><span class='dates'>Jun 2005 to Jun 2008</span><br>
+<span class='jobTitle'>Chief, Housing Branch</span> 
 <p class='accomplishment'>
 	<ul class="accomplishments">
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
+		<li class="bulletAccomplish">Led 5 housing and engineering professionals in managing over 18,000 military housing units.</li>
+		<li class="bulletAccomplish">Responsible for developing and executing the $1.5B, 6-year operations, maintenance, lease and construction program for Air Force personnel in Europe.</li>
+		<li class="bulletAccomplish">Conducted extensive analyses on housing requirements for Airmen and their families in Europe.</li>
+		<li class="bulletAccomplish">Successfully fended off attempt to cut 1,000 on-base houses and saved two military housing construction projects worth $84M from Congressional cut.</li>
+		<li class="bulletAccomplish">Assumed lead project manager duties for $132M build to lease program, put project back on schedule, and secured $58M in loan guarantees from German government officials.</li>
+		<li class="bulletAccomplish">Developed project management plan, request for proposal, and strategy briefings.</li>
 	</ul>
 </p>
-Jun 07 to Dec 07: Program Manager, USACE Gulf Region Division
-Baghdad, IQ Oversaw 7 program managers in the management and execution of a $295M Iraqi Reconstruction Relief Fund construction program supporting Transportation and Communications projects throughout Iraq.  Additionally, managed a $220M non-construction program that provided equipment and operations & maintenance services.  Coordinated with Iraqi ministry officials to restart the $68M Iraqi roads and bridges Project Partnership Agreement.
-<span class='companyName'><span class='location'></span> </span><span class='dates'></span><br>
-<span class='jobTitle'></span> 
+
+<span class='companyName'>USACE Gulf Region Division<span class='location'>Baghdad, Iraq </span> </span><span class='dates'>Jun 2007 to Dec 2007</span><br>
+<span class='jobTitle'>Program Manager</span> 
 <p class='accomplishment'>
 	<ul class="accomplishments">
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
+		<li class="bulletAccomplish">Oversaw 7 program managers in the management and execution of a $295M Iraqi Reconstruction Relief Fund construction program supporting Transportation and Communications projects throughout Iraq.</li>
+		<li class="bulletAccomplish">Managed a $220M non-construction program that provided equipment and operations & maintenance services. </li>
+		<li class="bulletAccomplish">Coordinated with Iraqi ministry officials to restart the $68M Iraqi roads and bridges Project Partnership Agreement.</li>
 	</ul>
 </p>
-Mar 03 to Jun 05: Director, Readiness Management Dept, AF Civil Engineer & Services School
-Wright Patterson AFB, OH Supervised 7 instructors in the delivery of upper-level graduate professional continuing education supporting a worldwide community of 60,000 engineering professionals.  Guided
-an overhaul of the initial wartime engineering skills course which yielded an immediate savings of $16,000 per offering.  Recognized by the Commandant of the Air Force Institute of Technology as the #1 field grade officer (Majors & Lieutenant Colonels) for 2003.
-Jun 00 to Aug 01: Program Manager/Analyst, HQ USAF Office of The Civil Engineer
-
-<span class='companyName'><span class='location'></span> </span><span class='dates'></span><br>
-<span class='jobTitle'></span> 
+
+<span class='companyName'>AF Civil Engineer & Services School<span class='location'>Wright Patterson AFB, OH</span> </span><span class='dates'>Mar 03 to Jun 05</span><br>
+<span class='jobTitle'>Director, Readiness Management Dept</span> 
 <p class='accomplishment'>
 	<ul class="accomplishments">
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
-		<li class="bulletAccomplish"></li>
+		<li class="bulletAccomplish">Supervised 7 instructors in the delivery of upper-level graduate professional continuing education supporting a worldwide community of 60,000 engineering professionals. </li>
+		<li class="bulletAccomplish">Guided
+an overhaul of the initial wartime engineering skills course which yielded an immediate savings of $16,000 per offering. </li>
+		<li class="bulletAccomplish">Recognized by the Commandant of the Air Force Institute of Technology as the #1 field grade officer (Majors & Lieutenant Colonels) for 2003.</li>
 	</ul>
 </p>
 <h3>Education:</h3>
