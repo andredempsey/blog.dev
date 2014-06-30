@@ -34,7 +34,7 @@ class PostsController extends \BaseController {
 	public function store()
 	{
 		// return "Store a newly created resource in storage.";
-		
+		Log::info(Input::all());
 		return Redirect::back()->withInput();
 	}
 
