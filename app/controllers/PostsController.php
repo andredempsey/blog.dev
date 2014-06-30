@@ -21,8 +21,8 @@ class PostsController extends \BaseController {
 	 */
 	public function create()
 	{
-		return View::make('posts.create');
 		// return "Show the form for creating a new resource";
+		return View::make('posts.create');
 	}
 
 
@@ -34,6 +34,7 @@ class PostsController extends \BaseController {
 	public function store()
 	{
 		// return "Store a newly created resource in storage.";
+		
 		return Redirect::back()->withInput();
 	}
 
