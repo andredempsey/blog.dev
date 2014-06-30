@@ -22,6 +22,7 @@ class PostsController extends \BaseController {
 	public function create()
 	{
 		// return "Show the form for creating a new resource";
+		// App::missing();
 		return View::make('posts.create');
 	}
 
