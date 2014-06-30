@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('contentPortfolio')
+@section('content')
 <div id="myCarousel" class="carousel slide">
   <!-- Indicators -->
   <ol class="carousel-indicators">

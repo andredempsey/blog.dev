@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('contentPostCreate')
+@section('content')
 <h3 id="topParagraph">New Post</h3>
 <form method="POST" action="{{{ action('PostsController@store')}}}">
 	<label for="title">Title:</label>	

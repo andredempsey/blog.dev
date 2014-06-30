@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('contentResume')
+@section('content')
 
 
 
