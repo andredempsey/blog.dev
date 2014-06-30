@@ -11,6 +11,7 @@
 <body>
 	<div class="container">
 	@include('header')
+    @yield('contentPostCreate')
     @yield('contentResume')
     @yield('contentPortfolio')
     @include('footer')
