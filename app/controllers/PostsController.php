@@ -9,8 +9,8 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		return "Display a listing of the resource.";
-
+		$posts = Post::all();
+	    return View::make('posts.index')->with('posts',$posts);
 	}
 
 
@@ -22,7 +22,7 @@ class PostsController extends \BaseController {
 	public function create()
 	{
 		// return "Show the form for creating a new resource";
-		// App::missing();
+
 		return View::make('posts.create');
 	}
 
@@ -35,8 +35,27 @@ class PostsController extends \BaseController {
 	public function store()
 	{
 		// return "Store a newly created resource in storage.";
-		Log::info(Input::all());
-		return Redirect::back()->withInput();
+
+		if (Input::has('title'))
+		{
+			if (Input::has('body'))
+			{
+				$posts = new Post;
+				$posts->title = Input::get('title');
+				$posts->body = Input::get('body');
+				$posts->save();
+			}
+			else
+			{
+				return Redirect::back()->withInput();
+			}
+		}
+		else
+		{
+			return Redirect::back()->withInput();
+		}
+		
+			return Redirect::action('PostsController@index');
 	}
 
 
@@ -48,7 +67,8 @@ class PostsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		return "Display the specified resource for:  $id";
+		$post = Post::find($id);
+	    return View::make('posts.show')->with('post', $post);
 	}
 
 

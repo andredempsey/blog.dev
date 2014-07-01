@@ -19,3 +19,5 @@ Route::get('/portfolio', 'HomeController@showPortfolio');
 Route::get('/resume', 'HomeController@showResume');
 
 Route::resource('posts', 'PostsController');
+
+Route::get('/orm-test', 'PostsController');
