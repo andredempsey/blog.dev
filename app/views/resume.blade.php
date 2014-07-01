@@ -10,7 +10,7 @@
 
 
 <h3>Experience:</h3>
-<span class='companyName'>MWH Global, <span class='location'>San Antonio, TX</span> </span><span class='dates'>Jun 2012 – Apr 2014</span><br>
+<span class='companyName'>MWH Global, <span class='location'>San Antonio, TX</span> </span><span class='dates' id='2010'>Jun 2012 – Apr 2014</span><br>
 <span class='jobTitle'>Infrastructure Data Management Specialist</span> 
 <p class='accomplishment'>
 	<ul class="accomplishments">
@@ -21,7 +21,7 @@
 	</ul>
 </p>
       
-<span class='companyName'>Booz Allen Hamilton (Client:  HQ 502 Air Base Wing) <span class='location'>San Antonio, TX</span> </span><span class='dates' id='2010'>Sep 2010 to May 2012</span><br>
+<span class='companyName'>Booz Allen Hamilton (Client:  HQ 502 Air Base Wing) <span class='location'>San Antonio, TX</span> </span><span class='dates' id='2009'>Sep 2010 to May 2012</span><br>
 <span class='jobTitle'>Associate (Management Consulting)</span>
 <p class='accomplishment'>
 	<ul class="accomplishments">
@@ -31,7 +31,7 @@
 	</ul>
 </p>
 
-<span class='companyName'><span class='location'>JB Balad, Iraq</span> </span><span class='dates' id='2009'>Oct 2009 to Apr 2010</span><br>
+<span class='companyName'> <span class='location'>JB Balad, Iraq </span> </span><span class='dates' id='2008'>Oct 2009 to Apr 2010</span><br>
 <span class='jobTitle'>Facilities Engineer Team Chief</span> 
 <p class='accomplishment'>
 	<ul class="accomplishments">
@@ -42,7 +42,7 @@ and other repairs worth $42M in essential infrastructure for the people of Iraq.
 	</ul>
 </p>
 
-<span class='companyName'>HQ Air Education Training Command<span class='location'>Randolph AFB, TX</span> </span><span class='dates' id='2008'>Jun 2008 to Jul 2010</span><br>
+<span class='companyName'>HQ Air Education Training Command <span class='location'>Randolph AFB, TX</span> </span><span class='dates' id='2007'>Jun 2008 to Jul 2010</span><br>
 <span class='jobTitle'>Operations Support Section Chief</span> 
 <p class='accomplishment'>
 	<ul class="accomplishments">
@@ -51,7 +51,7 @@ and other repairs worth $42M in essential infrastructure for the people of Iraq.
 	</ul>
 </p>
 
-<span class='companyName'>USACE Gulf Region Division<span class='location'>Baghdad, Iraq </span> </span><span class='dates' id='2007'>Jun 2007 to Dec 2007</span><br>
+<span class='companyName'>US Army Corps of Engineers, Gulf Region Division <span class='location'>Baghdad, Iraq </span> </span><span class='dates' id='2005'>Jun 2007 to Dec 2007</span><br>
 <span class='jobTitle'>Program Manager</span> 
 <p class='accomplishment'>
 	<ul class="accomplishments">
@@ -61,7 +61,7 @@ and other repairs worth $42M in essential infrastructure for the people of Iraq.
 	</ul>
 </p>
 
-<span class='companyName'>HQ United States Air Forces Europe<span class='location'>Ramstein AB, GE</span> </span><span class='dates' id='2005'>Jun 2005 to Jun 2008</span><br>
+<span class='companyName'>HQ United States Air Forces Europe<span class='location'>Ramstein AB, GE</span> </span><span class='dates' id='2003'>Jun 2005 to Jun 2008</span><br>
 <span class='jobTitle'>Chief, Housing Branch</span> 
 <p class='accomplishment'>
 	<ul class="accomplishments">
@@ -74,7 +74,7 @@ and other repairs worth $42M in essential infrastructure for the people of Iraq.
 	</ul>
 </p>
 
-<span class='companyName'>AF Civil Engineer & Services School<span class='location'>Wright Patterson AFB, OH</span> </span><span class='dates' id='2003'>Mar 2003 to Jun 2005</span><br>
+<span class='companyName'>AF Civil Engineer & Services School<span class='location'>Wright Patterson AFB, OH</span> </span><span class='dates'>Mar 2003 to Jun 2005</span><br>
 <span class='jobTitle'>Director, Readiness Management Dept</span> 
 <p class='accomplishment'>
 	<ul class="accomplishments">
@@ -95,16 +95,16 @@ an overhaul of the initial wartime engineering skills course which yielded an im
 </ul>
 
 <div class="navbar navbar-fixed-bottom navbar-inverse">
-	<span class="col-xs-1 timeline-odd"><a href="#2004">2003</a></span>
-	<span class="col-xs-1 timeline-even"><a href="#2004">2004</a></span>
-	<span class="col-xs-1 timeline-odd"><a href="#2006">2005</a></span>
-	<span class="col-xs-1 timeline-even"><a href="#2006">2006</a></span>
-	<span class="col-xs-1 timeline-odd"><a href="#2008">2007</a></span>
-	<span class="col-xs-1 timeline-even"><a href="#2006">2008</a></span>
-	<span class="col-xs-1 timeline-odd"><a href="#2010">2009</a></span>
-	<span class="col-xs-1 timeline-even"><a href="#2011">2010</a></span>
-	<span class="col-xs-1 timeline-odd"><a href="#2011">2011</a></span>
-	<span class="col-xs-1 timeline-even"><a href="#2011">2012</a></span>
+	<span class="col-xs-1 timeline-odd"><a href="#2003">2003</a></span>
+	<span class="col-xs-1 timeline-even"><a href="#2003">2004</a></span>
+	<span class="col-xs-1 timeline-odd"><a href="#2005">2005</a></span>
+	<span class="col-xs-1 timeline-even"><a href="#2005">2006</a></span>
+	<span class="col-xs-1 timeline-odd"><a href="#2007">2007</a></span>
+	<span class="col-xs-1 timeline-even"><a href="#2008">2008</a></span>
+	<span class="col-xs-1 timeline-odd"><a href="#2009">2009</a></span>
+	<span class="col-xs-1 timeline-even"><a href="#2010">2010</a></span>
+	<span class="col-xs-1 timeline-odd"><a href="#2010">2011</a></span>
+	<span class="col-xs-1 timeline-even"><a href="#topParagraph">2012</a></span>
 	<span class="col-xs-1 timeline-odd"><a href="#topParagraph">2013</a></span>
 	<span class="col-xs-1 timeline-even"><a href="#topParagraph">2014</a></span>
 </div>
