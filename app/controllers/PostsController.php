@@ -11,7 +11,12 @@ class PostsController extends \BaseController {
 	{
 	
 		$posts = Post::orderBy('updated_at', 'desc')->paginate(4);
-	    return View::make('posts.index')->with('posts', $posts);
+		$number = Post::count();
+		$data = [
+			'posts' => $posts,
+			'number'  => $number
+		];
+	    return View::make('posts.index')->with($data);
 	}
 
 	/**
