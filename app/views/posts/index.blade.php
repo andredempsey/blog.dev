@@ -15,8 +15,8 @@
 		@foreach ($posts as $post)
 		    <tr>
 		    	<td>{{link_to_action('PostsController@show', $post->title,array($post->id))}}</td>
-			    <td style="text-align: center">{{ $post->created_at }}</td>
-			    <td style="text-align: center">{{ $post->updated_at }}</td>
+			    <td style="text-align: center">{{ $post->created_at->setTimezone('America/Chicago')->format('F jS Y @ h:i:s A')}}</td>
+			    <td style="text-align: center">{{ $post->updated_at->diffForHumans() }}</td>
 			    <td style="text-align: center"><button type="button" class="btn btn-default">{{link_to_action('PostsController@edit', 'edit', array($post->id))}}</button></td>
 		    </tr>
 		@endforeach

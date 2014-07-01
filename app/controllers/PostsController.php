@@ -9,9 +9,7 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		// $posts = Post::whereRaw('1 = 1')->orderBy('updated_at', 'desc')->get();
-
-
+	
 		$posts = Post::orderBy('updated_at', 'desc')->paginate(4);
 	    return View::make('posts.index')->with('posts', $posts);
 	}
@@ -37,7 +35,7 @@ class PostsController extends \BaseController {
 	public function store()
 	{
 		// return "Store a newly created resource in storage.";
-			return $this->update(null);
+		return $this->update(null);
 
 	}
 
