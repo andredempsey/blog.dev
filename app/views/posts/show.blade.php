@@ -2,11 +2,8 @@
 
 @section('content')
 
-<br>
-<br>
-<br>
-<br>
-<p>Index: {{ $post->id }}</p>
-<p>Title: {{ $post->title }}</p>
-<p>Post: {{ $post->body }}</p>
+<div class="container" id="topParagraph">
+	<p>{{ $post->title }}</p>
+	<p>{{ $post->body }}</p>
+</div>
 @stop

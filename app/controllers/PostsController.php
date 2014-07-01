@@ -9,9 +9,19 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		$posts = Post::all();
+		// $posts = Post::with(array('posts' => function($query)
+		// {
+		//     $query->orderBy('created_at', 'desc');
+
+		// }))->get();
+
+		$posts = Post::whereRaw('1 = 1')->orderBy('created_at', 'desc')->get();
 	    return View::make('posts.index')->with('posts',$posts);
 	}
+
+
+
+
 
 
 	/**
