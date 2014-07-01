@@ -52,7 +52,7 @@ h2 {
 	margin-bottom: 5px; 
 }
 #topParagraph {
-		margin-top: 170px;
+		margin-top: 120px;
 }
 .jobTitle, .companyName {
 	font-weight: bolder;
@@ -67,6 +67,6 @@ h2 {
 	float:right;
 
 }
-footer {
-	
+#blogcount {
+	float: right;
 }

@@ -9,16 +9,9 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-
-
-		$posts = Post::whereRaw('1 = 1')->orderBy('created_at', 'desc')->get();
-	    return View::make('posts.index')->with('posts',$posts);
+		$posts = Post::whereRaw('1 = 1')->orderBy('updated_at', 'desc')->get();
+	    return View::make('posts.index')->with('posts', $posts);
 	}
-
-
-
-
-
 
 	/**
 	 * Show the form for creating a new resource.
@@ -29,7 +22,7 @@ class PostsController extends \BaseController {
 	{
 		// return "Show the form for creating a new resource";
 
-		return View::make('posts.create');
+		return View::make('posts.create-edit');
 	}
 
 
@@ -41,19 +34,8 @@ class PostsController extends \BaseController {
 	public function store()
 	{
 		// return "Store a newly created resource in storage.";
-		$validator = Validator::make(Input::all(), Post::$rules);
-		if ($validator->fails()) 
-		{
-			return Redirect::back()->withInput()->withErrors($validator);
-		}
-		else
-		{
-			$posts = new Post;
-			$posts->title = Input::get('title');
-			$posts->body = Input::get('body');
-			$posts->save();		
-			return Redirect::action('PostsController@index');
-		}
+			return $this->update(null);
+
 	}
 
 
@@ -78,7 +60,11 @@ class PostsController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		return "Show the form for editing the specified resource for:  $id";
+		
+		$post = Post::findOrFail($id);
+
+	    return View::make('posts.create-edit')->with('post', $post);
+
 	}
 
 
@@ -90,7 +76,25 @@ class PostsController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		return "Update the specified resource in storage for: $id";
+		$post = new Post();
+
+		if ($id!=null) 
+		{
+			$post = Post::findOrFail($id);
+		}
+
+		$validator = Validator::make(Input::all(), Post::$rules);
+		if ($validator->fails()) 
+		{
+			return Redirect::back()->withInput()->withErrors($validator);
+		}
+		else
+		{
+			$post->title = Input::get('title');
+			$post->body = Input::get('body');
+			$post->save();		
+			return Redirect::action('PostsController@index');
+		}
 	}
 
 
