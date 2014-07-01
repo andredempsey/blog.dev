@@ -9,11 +9,7 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		// $posts = Post::with(array('posts' => function($query)
-		// {
-		//     $query->orderBy('created_at', 'desc');
 
-		// }))->get();
 
 		$posts = Post::whereRaw('1 = 1')->orderBy('created_at', 'desc')->get();
 	    return View::make('posts.index')->with('posts',$posts);
@@ -45,27 +41,19 @@ class PostsController extends \BaseController {
 	public function store()
 	{
 		// return "Store a newly created resource in storage.";
-
-		if (Input::has('title'))
+		$validator = Validator::make(Input::all(), Post::$rules);
+		if ($validator->fails()) 
 		{
-			if (Input::has('body'))
-			{
-				$posts = new Post;
-				$posts->title = Input::get('title');
-				$posts->body = Input::get('body');
-				$posts->save();
-			}
-			else
-			{
-				return Redirect::back()->withInput();
-			}
+			return Redirect::back()->withInput()->withErrors($validator);
 		}
 		else
 		{
-			return Redirect::back()->withInput();
-		}
-		
+			$posts = new Post;
+			$posts->title = Input::get('title');
+			$posts->body = Input::get('body');
+			$posts->save();		
 			return Redirect::action('PostsController@index');
+		}
 	}
 
 

@@ -28,7 +28,7 @@
               <li><a href="#OtherProjects">Other Projects</a></li>
             </ul>
           </li>
-          <li><a href="/blog.html" target="ext">Blog</a></li>
+          <li><a href="{{{ action('PostsController@index') }}}" target="ext">Blog</a></li>
           <li><a href="{{{ action('HomeController@showResume') }}}" target="ext">About</a></li>
         </ul>
         <form action="/search" class="main-search" id="main-search" role="search">

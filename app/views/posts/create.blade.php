@@ -2,6 +2,8 @@
 @section('content')
 <div class="container">
 	<h3 id="topParagraph">New Post</h3>
+	{{$errors->first('title','<span class="help-block">:message</span>')}}
+	{{$errors->first('body','<span class="help-block">:message</span>')}}
 	<form method="POST" action="{{{ action('PostsController@store')}}}">
 		<div class="form-group">
 			<label for="title" >Title:</label>	
