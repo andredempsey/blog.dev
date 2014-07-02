@@ -2,6 +2,15 @@
 
 class PostsController extends \BaseController {
 
+	public function __construct()
+	{
+    // call base controller constructor
+    parent::__construct();
+
+    // run auth filter before all methods on this controller except index and show
+    $this->beforeFilter('auth.basic', array('except' => array('index', 'show')));
+	}
+
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -41,7 +50,6 @@ class PostsController extends \BaseController {
 	{
 		// return "Store a newly created resource in storage.";
 		return $this->update(null);
-
 	}
 
 
@@ -68,6 +76,7 @@ class PostsController extends \BaseController {
 	{
 		
 		$post = Post::findOrFail($id);
+		
 
 	    return View::make('posts.create-edit')->with('post', $post);
 
@@ -82,16 +91,20 @@ class PostsController extends \BaseController {
 	 */
 	public function update($id)
 	{
+		$messageValue = 'Post successfully added!';
+		$eMessageValue = 'There was a problem adding the post.';
 		$post = new Post();
-
 		if ($id!=null) 
 		{
+			$messageValue = 'Post was successfully updated!';
+			$eMessageValue = 'There was a problem updating your post.';
 			$post = Post::findOrFail($id);
 		}
 
 		$validator = Validator::make(Input::all(), Post::$rules);
 		if ($validator->fails()) 
 		{
+			Session::flash('errorMessage', $eMessageValue);
 			return Redirect::back()->withInput()->withErrors($validator);
 		}
 		else
@@ -99,10 +112,10 @@ class PostsController extends \BaseController {
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
 			$post->save();		
+			Session::flash('successMessage', $messageValue);
 			return Redirect::action('PostsController@index');
 		}
 	}
-
 
 	/**
 	 * Remove the specified resource from storage.
@@ -112,7 +125,10 @@ class PostsController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		return "Remove the specified resource from storage for: $id";
+		$post = Post::findOrFail($id);
+		$post->delete();
+		Session::flash('successMessage', 'Post was successfully deleted!');
+		return Redirect::action('PostsController@index');
 	}
 
 

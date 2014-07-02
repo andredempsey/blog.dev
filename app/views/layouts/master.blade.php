@@ -8,10 +8,17 @@
     <link href="/css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/portfoliostyle.css" rel="stylesheet">
 </head>
-<body>
-	<div class="container">
 	@include('header')
-    @yield('content')
+<body>
+    <div class="container">
+        @yield('content')
+        @if (Session::has('successMessage'))
+            <div class="alert alert-success">{{{ Session::get('successMessage') }}}</div>
+        @endif
+        @if (Session::has('errorMessage'))
+            <div class="alert alert-danger">{{{ Session::get('errorMessage') }}}</div>
+        @endif
+    </div>
     @include('footer')
 </body>
 </html>

@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="container" id="topParagraph">
-	<p><span class="badge" id="blogcount">{{$number}} posts</span>
+	<p><span class="badge pull-right">{{$number}} posts</span>
 	<button type="button" class="btn btn-default">{{link_to_action('PostsController@create','New Post')}}</button></p>
 	<table class="table table-hover table-striped">
 		<tr>
