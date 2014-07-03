@@ -20,7 +20,7 @@ class PostsController extends \BaseController {
 	{
 		$searchTitle = Input::get('searchTitle');
 		$isFiltered = ($searchTitle!='') ? True : False; 
-		$posts = Post::where('title', 'LIKE', '%' . $searchTitle . '%')->with('user')->orderBy('created_at', 'desc')->paginate(4);
+		$posts = Post::with('user')->where('title', 'LIKE', '%' . $searchTitle . '%')->orderBy('created_at', 'desc')->paginate(4);
 		$number = Post::count();
 		$data = [
 			'posts' => $posts,
