@@ -18,12 +18,14 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-	
-		$posts = Post::orderBy('updated_at', 'desc')->paginate(4);
+		$searchTitle = Input::get('searchTitle');
+		$isFiltered = ($searchTitle!='') ? True : False; 
+		$posts = Post::where('title', 'LIKE', '%' . $searchTitle . '%')->with('user')->orderBy('created_at', 'desc')->paginate(4);
 		$number = Post::count();
 		$data = [
 			'posts' => $posts,
-			'number'  => $number
+			'number'  => $number,
+			'isFiltered' => $isFiltered
 		];
 	    return View::make('posts.index')->with($data);
 	}
@@ -131,5 +133,5 @@ class PostsController extends \BaseController {
 		return Redirect::action('PostsController@index');
 	}
 
-
+	
 }
