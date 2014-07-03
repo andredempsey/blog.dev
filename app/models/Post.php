@@ -1,6 +1,6 @@
 <?php
 
-class Post extends Eloquent {
+class Post extends BaseModel {
 	//The db table this model realtes to
     protected $table = 'posts';
 

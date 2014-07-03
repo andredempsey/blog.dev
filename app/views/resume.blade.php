@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-
+<div class="container">
 <h3 id="topParagraph">Summary:</h3>
 <p>Experienced professional consultant, database developer, data analyst, and veteran Air Force officer  
 <span>with 20+ years’ experience successfully leading people in program, project, and facility management activities</span>
@@ -108,5 +108,5 @@ an overhaul of the initial wartime engineering skills course which yielded an im
 	<span class="col-xs-1 timeline-odd"><a href="#topParagraph">2013</a></span>
 	<span class="col-xs-1 timeline-even"><a href="#topParagraph">2014</a></span>
 </div>
-
+</div>
 @stop

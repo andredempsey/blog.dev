@@ -31,12 +31,6 @@
           <li><a href="{{{ action('PostsController@index') }}}" target="ext">Blog</a></li>
           <li><a href="{{{ action('HomeController@showResume') }}}" target="ext">About</a></li>
         </ul>
-        <form action="/search" class="main-search" id="main-search" role="search">
-        <div class="main-search__content">
-          <input class="main-search__input" name="q" placeholder="Search..." value="">
-          <input class="main-search__button g-search" type="submit" value="Search">
-        </div>
-        </form>
       </div><!-- /navbar-collapse collapse -->
     </div><!-- /navbar navbar-inverse navbar-static-top  -->
   </div><!-- /container -->

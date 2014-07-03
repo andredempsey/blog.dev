@@ -1,6 +1,6 @@
 <div class="container">	
 	<footer>
-		<p>&copy; {{date('Y')}} AaIT Innovations, LLC</p>
+		<p>&copy; {{date('Y')}} AaIT Innovations, LLC.  All Rights Reserved</p>
 	</footer>
 </div><!-- /.container -->
 <!-- script references -->
