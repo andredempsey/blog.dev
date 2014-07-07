@@ -77,11 +77,13 @@
 									<h3>{{link_to_action('PostsController@show', $post->title,array($post->id))}}</h3>
 								</div>
 								<div class="post-summary">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, nulla id pretium malesuada, dui est laoreet risus, ac rhoncus eros diam id odio. Duis elementum ligula eu ipsum condimentum accumsan.</p>
+									<p>
+										{{{substr($post->body, 0, 100)}}}
+									</p>
 								</div>
 								<!-- End Post Title & Summary -->
 								<div class="post-more">
-									{{link_to_action('PostsController@show', $post->title,array($post->id))}}
+									{{link_to_action('PostsController@show', 'Read more...', array($post->id))}}
 								</div>
 							</div>
 						</div>

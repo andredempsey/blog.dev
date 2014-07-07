@@ -16,9 +16,9 @@
 				<div class="row">
 					<div class="col-sm-5">
 						<div class="basic-login">
-							{{Form::open(array('action'=>'HomeController@doLogin', 'class' => 'form-signin'))}}
+							{{Form::open(array('action'=>'HomeController@doLogin', 'class' => 'form-signin', 'role' => 'form'))}}
 								<div class="form-group">
-									{{Form::label('email', 'Username or Email', array('class' => 'icon-user'))}}
+									{{Form::label('email', 'Email', array('class' => 'icon-user'))}}
 									{{Form::text('email', null, array('class' => 'form-control'))}}
 								</div>
 								<div class="form-group">

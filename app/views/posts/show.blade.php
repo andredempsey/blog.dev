@@ -28,10 +28,15 @@
 						<img src="/img/blog-large.jpg" alt="Post Title">
 					</div>
 					<div class="single-post-content">
-						<p>{{ $post->body }}</p>
+						<p>{{ $post->body }}
+						@if(Auth::user()->id == $post->user_id)
+						<div class="pull-right">{{link_to_action('PostsController@edit', 'edit', array($post->id))}}</div>
+						
 						{{ Form::model($post, array('action' => array('PostsController@destroy', $post->id), 'method' => 'DELETE')) }}
 							{{Form::submit('Delete', array('class' => 'btn btn-danger pull-right'))}}
 						{{Form::close()}}
+						</p>
+						@endif
 					</div>
 					<!-- Comments -->
 					<div class="post-coments">

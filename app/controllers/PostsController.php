@@ -38,7 +38,7 @@ class PostsController extends \BaseController {
 	public function create()
 	{
 		// return "Show the form for creating a new resource";
-
+		
 		return View::make('posts.create-edit');
 	}
 
@@ -96,6 +96,7 @@ class PostsController extends \BaseController {
 		$messageValue = 'Post successfully added!';
 		$eMessageValue = 'There was a problem adding the post.';
 		$post = new Post();
+		$post->user_id = Auth::user()->id;
 		if ($id!=null) 
 		{
 			$messageValue = 'Post was successfully updated!';
@@ -113,7 +114,6 @@ class PostsController extends \BaseController {
 		{
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
-			$post->user_id = Auth::user()->id;
 			$post->save();		
 			Session::flash('successMessage', $messageValue);
 			return Redirect::action('PostsController@index');

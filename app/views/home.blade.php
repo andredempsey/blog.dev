@@ -13,7 +13,7 @@
 				<!-- Slide Text -->
 				<h3 class="subtitle">It looks great on desktops, laptops, tablets and smartphones</h3>
 				<!-- Slide Image -->
-				<img class="slide-img" src="img/riverwalk.jpg" alt="Riverwalk" />
+				<img class="slide-img" src="img/homepage-slider/slide1.png" alt="Riverwalk" />
 			</li>
 			<!-- End Slide 1 -->
 			<!-- Slide 2 -->
@@ -23,7 +23,7 @@
 				<!-- Slide Text -->
 				<h3 class="subtitle">Comes with 5 color schemes and it's easy to make your own!</h3>
 				<!-- Slide Image -->
-				<img class="slide-img" src="img/fountain.jpg" alt="Slide 2" />
+				<img class="slide-img" src="img/homepage-slider/slide2.png" alt="Slide 2" />
 			</li>
 			<!-- End Slide 2 -->
 			<!-- Slide 3 -->
@@ -119,6 +119,37 @@
 </div>
 <!-- End Call to Action Bar -->
 
+<!-- Team -->
+<div class="section">
+	<div class="container">
+		<h2>Our Team</h2>
+		<div class="row">
+			<!-- Team Member -->
+			<div class="testimonial col-md-4 col-sm-6">
+				<!-- Author Photo -->
+				<div class="author-photo">
+					<img src="img/Andre.jpg" alt="Andre">
+				</div>
+				<div class="testimonial-bubble">
+					<blockquote>
+						<!-- Quote -->
+						<p class="quote">
+                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut."
+                		</p>
+                		<!-- Author Info -->
+                		<cite class="author-info">
+                			- Andre Dempsey,<br>Founder, <a href="mailto:aait-innovations@outlook.com">AaIT Innovations, LLC</a>
+                		</cite>
+                	</blockquote>
+                	<div class="sprite arrow-speech-bubble"></div>
+                </div>
+            </div>
+            <!-- End Team Member -->
+
+		</div>
+	</div>
+</div>
+<!-- End Testimonials -->
 <!-- Testimonials -->
 <div class="section">
 	<div class="container">

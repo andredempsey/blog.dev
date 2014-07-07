@@ -3,14 +3,14 @@
 @section('content')
 <div class="container">
 <h3 id="topParagraph">Summary:</h3>
-<p>Experienced professional consultant, database developer, data analyst, and veteran Air Force officer  
+<p>Experienced professional consultant, web/database developer, data analyst, and veteran Air Force officer  
 <span>with 20+ years’ experience successfully leading people in program, project, and facility management activities</span>
 <span>at all organizational levels.  Expert problem solver, process improver, and project manager with experience developing business solutions </span>
 <span>in HTML/CSS, Bootstrap, PHP, Laravel, JavaScript, JQuery, and MS Office Enterprise applications.</span>
 
 
 <h3>Experience:</h3>
-<span class='companyName'>MWH Global, <span class='location'>San Antonio, TX</span> </span><span class='dates'>Jun 2012 – Apr 2014</span><br>
+<span class='companyName'>MWH Global, <span class='location'>San Antonio, TX</span> </span><span class='dates pull-right'>Jun 2012 – Apr 2014</span><br>
 <span class='jobTitle'>Infrastructure Data Management Specialist</span> 
 <p class='accomplishment'>
 	<ul class="accomplishments">
@@ -21,7 +21,7 @@
 	</ul>
 </p>
       
-<span class='companyName'>Booz Allen Hamilton (Client:  HQ 502 Air Base Wing) <span class='location'>San Antonio, TX</span> </span><span class='dates'>Sep 2010 to May 2012</span><br>
+<span class='companyName'>Booz Allen Hamilton (Client:  HQ 502 Air Base Wing) <span class='location'>San Antonio, TX</span> </span><span class='dates pull-right'>Sep 2010 to May 2012</span><br>
 <span class='jobTitle'>Associate (Management Consulting)</span>
 <p class='accomplishment'>
 	<ul class="accomplishments">
@@ -31,7 +31,7 @@
 	</ul>
 </p>
 
-<span class='companyName'> <span class='location'>JB Balad, Iraq </span> </span><span class='dates'>Oct 2009 to Apr 2010</span><br>
+<span class='companyName'> <span class='location'>JB Balad, Iraq </span> </span><span class='dates pull-right'>Oct 2009 to Apr 2010</span><br>
 <span class='jobTitle'>Facilities Engineer Team Chief</span> 
 <p class='accomplishment'>
 	<ul class="accomplishments">
@@ -42,7 +42,7 @@ and other repairs worth $42M in essential infrastructure for the people of Iraq.
 	</ul>
 </p>
 
-<span class='companyName'>HQ Air Education Training Command <span class='location'>Randolph AFB, TX</span> </span><span class='dates'>Jun 2008 to Jul 2010</span><br>
+<span class='companyName'>HQ Air Education Training Command <span class='location'>Randolph AFB, TX</span> </span><span class='dates pull-right'>Jun 2008 to Jul 2010</span><br>
 <span class='jobTitle'>Operations Support Section Chief</span> 
 <p class='accomplishment'>
 	<ul class="accomplishments">
@@ -51,7 +51,7 @@ and other repairs worth $42M in essential infrastructure for the people of Iraq.
 	</ul>
 </p>
 
-<span class='companyName'>US Army Corps of Engineers, Gulf Region Division <span class='location'>Baghdad, Iraq </span> </span><span class='dates'>Jun 2007 to Dec 2007</span><br>
+<span class='companyName'>US Army Corps of Engineers, Gulf Region Division <span class='location'>Baghdad, Iraq </span> </span><span class='dates pull-right'>Jun 2007 to Dec 2007</span><br>
 <span class='jobTitle'>Program Manager</span> 
 <p class='accomplishment'>
 	<ul class="accomplishments">
@@ -61,7 +61,7 @@ and other repairs worth $42M in essential infrastructure for the people of Iraq.
 	</ul>
 </p>
 
-<span class='companyName'>HQ United States Air Forces Europe<span class='location'>Ramstein AB, GE</span> </span><span class='dates'>Jun 2005 to Jun 2008</span><br>
+<span class='companyName'>HQ United States Air Forces Europe<span class='location'>Ramstein AB, GE</span> </span><span class='dates pull-right'>Jun 2005 to Jun 2008</span><br>
 <span class='jobTitle'>Chief, Housing Branch</span> 
 <p class='accomplishment'>
 	<ul class="accomplishments">
@@ -74,7 +74,7 @@ and other repairs worth $42M in essential infrastructure for the people of Iraq.
 	</ul>
 </p>
 
-<span class='companyName'>AF Civil Engineer & Services School<span class='location'>Wright Patterson AFB, OH</span> </span><span class='dates'>Mar 2003 to Jun 2005</span><br>
+<span class='companyName'>AF Civil Engineer & Services School<span class='location'>Wright Patterson AFB, OH</span> </span><span class='dates pull-right'>Mar 2003 to Jun 2005</span><br>
 <span class='jobTitle'>Director, Readiness Management Dept</span> 
 <p class='accomplishment'>
 	<ul class="accomplishments">
