@@ -8,7 +8,7 @@ class PostsController extends \BaseController {
     parent::__construct();
 
     // run auth filter before all methods on this controller except index and show
-    $this->beforeFilter('auth.basic', array('except' => array('index', 'show')));
+    $this->beforeFilter('auth', array('except' => array('index', 'show')));
 	}
 
 	/**
@@ -113,6 +113,7 @@ class PostsController extends \BaseController {
 		{
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
+			$post->user_id = Auth::user()->id;
 			$post->save();		
 			Session::flash('successMessage', $messageValue);
 			return Redirect::action('PostsController@index');

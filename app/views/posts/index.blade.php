@@ -70,7 +70,7 @@
 								</div>
 								<!-- End Post Info -->
 								<!-- Post Image -->
-								<a href="page-blog-post-right-sidebar.html"><img src="img/blog1.jpg" class="post-image" alt="Post Title"></a>
+								<img src="img/blog1.jpg" class="post-image" alt="Post Title">
 								<!-- End Post Image -->
 								<!-- Post Title & Summary -->
 								<div class="post-title">

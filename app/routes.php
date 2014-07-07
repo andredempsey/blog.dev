@@ -21,3 +21,12 @@ Route::get('/resume', 'HomeController@showResume');
 Route::resource('posts', 'PostsController');
 
 Route::get('/orm-test', 'PostsController');
+
+Route::get('/Login', 'HomeController@showLogin');
+
+Route::post('/Login', 'HomeController@doLogin');
+
+Route::get('/Logout', 'HomeController@logout');
+
+
+

@@ -26,7 +26,7 @@
             <div class="col-footer col-md-4 col-xs-6">
               <h3>Contacts</h3>
               <p class="contact-us-details">
-                  <b>Address:</b> 2492 Jane Addams Dr, Schertz, Texas, USA<br/>
+                  <b>Address:</b> Schertz, Texas, USA<br/>
                   <b>Phone:</b> (210) 508-4133<br/>
                   <b>Email:</b> <a href="mailto:aait-innovations@outlook.com">aait-innovations@outlook.com</a>
                 </p>

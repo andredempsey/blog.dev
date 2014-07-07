@@ -15,7 +15,16 @@
                   </ul>
                 </div>
               </li>
-                  <li><a href="page-login.html">Login</a></li>
+              @if(!Auth::check())
+                    <!-- <li>{{ HTML::link('users/register', 'Register') }}</li>    -->
+                    <li>{{ link_to_action('HomeController@showLogin', 'Login') }}</li>
+                @else
+                    <li>{{{Auth::user()->email}}}</li>
+                    <li>{{ link_to_action('PostsController@create', 'Create Post') }}</li>
+                    <li>{{ link_to_action('HomeController@logout', 'Log Out') }}</li>
+                    <!-- <li>{{ HTML::link('users/logout', 'logout') }}</li> -->
+                @endif
+                  <!-- <li><a href="">Login</a></li> -->
                 </ul>
           </div>
             </div>
@@ -23,7 +32,7 @@
           <ul>
             <li class="logo-wrapper"><a href="index.html"><img src="/img/aaitlogo.png" alt="AaIT Innovations, LLC"></a></li>
             <li>
-              <a href="index.html">Home</a>
+              <a href="{{{ action('HomeController@showHomePage') }}}">Home</a>
             </li>
             <li>
               <a href="features.html">Features</a>
