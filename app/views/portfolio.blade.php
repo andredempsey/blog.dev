@@ -1,75 +1,114 @@
 @extends('layouts.master')
 
 @section('content')
-<div id="myCarousel" class="carousel slide">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-    <li data-target="#myCarousel" data-slide-to="4"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="/img/wva.jpg" class="img-responsive">
+
+    <body>
+    <!-- Page Title -->
+    <div class="section section-breadcrumbs">
       <div class="container">
-        <div class="carousel-caption">
-          <h1>Project Title Goes Here</h1>
-          <p>Project summary description goes here.</p>
-          <p><a class="btn btn-large btn-primary" href="#Project1">Learn more</a></p>
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Portfolio</h1>
+          </div>
         </div>
       </div>
     </div>
-    <div class="item">
-      <img src="/img/riverwalk.jpg" class="img-responsive">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Project Title Goes Here</h1>
-          <p>Project summary description goes here.</p>
-          <p><a class="btn btn-large btn-primary" href="#Project2">Learn more</a></p>
+        
+        <div class="section">
+        <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <a href="page-portfolio-item.html"><img src="img/portfolio1.jpg" alt="Project Name"></a>
+              </div>
+              <div class="portfolio-info">
+                <ul>
+                  <li class="portfolio-project-name">Project Name</li>
+                  <li>Website design & Development</li>
+                  <li>Client: Some Client LTD</li>
+                  <li class="read-more"><a href="page-portfolio-item.html" class="btn">Read more</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <a href="page-portfolio-item.html"><img src="img/portfolio2.jpg" alt="Project Name"></a>
+              </div>
+              <div class="portfolio-info">
+                <ul>
+                  <li class="portfolio-project-name">Project Name</li>
+                  <li>Website design & Development</li>
+                  <li>Client: Some Client LTD</li>
+                  <li class="read-more"><a href="page-portfolio-item.html" class="btn">Read more</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <a href="page-portfolio-item.html"><img src="img/portfolio3.jpg" alt="Project Name"></a>
+              </div>
+              <div class="portfolio-info">
+                <ul>
+                  <li class="portfolio-project-name">Project Name</li>
+                  <li>Website design & Development</li>
+                  <li>Client: Some Client LTD</li>
+                  <li class="read-more"><a href="page-portfolio-item.html" class="btn">Read more</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <a href="page-portfolio-item.html"><img src="img/portfolio4.jpg" alt="Project Name"></a>
+              </div>
+              <div class="portfolio-info">
+                <ul>
+                  <li class="portfolio-project-name">Project Name</li>
+                  <li>Website design & Development</li>
+                  <li>Client: Some Client LTD</li>
+                  <li class="read-more"><a href="page-portfolio-item.html" class="btn">Read more</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <a href="page-portfolio-item.html"><img src="img/portfolio5.jpg" alt="Project Name"></a>
+              </div>
+              <div class="portfolio-info">
+                <ul>
+                  <li class="portfolio-project-name">Project Name</li>
+                  <li>Website design & Development</li>
+                  <li>Client: Some Client LTD</li>
+                  <li class="read-more"><a href="page-portfolio-item.html" class="btn">Read more</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <a href="page-portfolio-item.html"><img src="img/portfolio6.jpg" alt="Project Name"></a>
+              </div>
+              <div class="portfolio-info">
+                <ul>
+                  <li class="portfolio-project-name">Project Name</li>
+                  <li>Website design & Development</li>
+                  <li>Client: Some Client LTD</li>
+                  <li class="read-more"><a href="page-portfolio-item.html" class="btn">Read more</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="item">
-      <img src="/img/fountain.jpg" class="img-responsive">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Project Title Goes Here</h1>
-          <p>Project summary description goes here.</p>
-          <p><a class="btn btn-large btn-primary" href="#Project3">Learn more</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <img src="/img/church.jpg" class="img-responsive">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Project Title Goes Here</h1>
-          <p>Project summary description goes here.</p>
-          <p><a class="btn btn-large btn-primary" href="#Project4">Learn more</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <img src="/img/tower.jpg" class="img-responsive">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Project Title Goes Here</h1>
-          <p>Project summary description goes here.</p>
-          <p><a class="btn btn-large btn-primary" href="#Project5">Learn more</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="icon-prev"></span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="icon-next"></span>
-  </a>  
-</div>
-<!-- /.carousel -->
-<hr>
+    </body>
 @stop
