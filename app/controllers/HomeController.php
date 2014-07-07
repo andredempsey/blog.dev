@@ -31,6 +31,7 @@ class HomeController extends BaseController {
 		$password = Input::get('password');
 		if (Auth::attempt(array('email' => $email, 'password' => $password))) 
 		{
+			Session::flash('successMessage', 'You have successfully logged in.');
 			return Redirect::intended(action('PostsController@index'));
 		}
 		else
@@ -43,6 +44,7 @@ class HomeController extends BaseController {
 	public function logout()
 	{
 		Auth::logout();
+		Session::flash('successMessage', 'You have successfully logged out.');
 		return Redirect::action('PostsController@index');
 	}
 

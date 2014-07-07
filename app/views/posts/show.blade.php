@@ -29,7 +29,7 @@
 					</div>
 					<div class="single-post-content">
 						<p>{{ $post->body }}
-						@if(Auth::user()->id == $post->user_id)
+						@if(Auth::check() && Auth::user()->id == $post->user_id)
 						<div class="pull-right">{{link_to_action('PostsController@edit', 'edit', array($post->id))}}</div>
 						
 						{{ Form::model($post, array('action' => array('PostsController@destroy', $post->id), 'method' => 'DELETE')) }}

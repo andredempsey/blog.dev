@@ -23,6 +23,7 @@
 								</div>
 								<div class="form-group">
 									{{Form::label('password', 'Password', array('class' => 'icon-lock'))}}
+									<br>
 									{{Form::password('password', null, array('class' => 'form-control'))}}
 								</div>
 								<div class="form-group">
@@ -34,6 +35,7 @@
 									<div class="clearfix"></div>
 								</div>
 							{{Form::close()}}
+							
 						</div>
 					</div>
 					<div class="col-sm-7 social-login">
