@@ -32,7 +32,7 @@
 						@endif
 					</div>
 					<div class="single-post-content">
-						<p>{{ $post->body }}
+						<p>{{$post->body}}
 						@if(Auth::check() && Auth::user()->id == $post->user_id)
 						<div class="pull-right">{{link_to_action('PostsController@edit', 'edit', array($post->id))}}</div>
 						

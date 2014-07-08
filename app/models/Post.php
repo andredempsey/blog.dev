@@ -1,5 +1,6 @@
 <?php
 
+
 class Post extends BaseModel {
 	//The db table this model realtes to
     protected $table = 'posts';
@@ -24,15 +25,11 @@ class Post extends BaseModel {
 		$this->img_path = '/' . $this->imgDir . '/' . $imageName;
 	}
 
-    // public function renderBody($targetText)
-    // {
-    //     $config = HTMLPurifier_Config::createDefault();
-    //     $Parsedown = new Parsedown();
-    //     // Convert the post body from markdown to HTML using parsedown.
-    //     $dirty_html = $Parsedown->text($targetText); # prints: <p>Hello <em>Parsedown</em>!</p>
-    //     $purifier = new HTMLPurifier($config);
-    //     // Sanitize the converted HTML with HTML Purifier.
-    //     // Return the sanitized result.
-    //     $this->body = $this->purifier->purify($dirty_html);
-    // }
+    public function getBodyAttribute($value)
+    {
+        $Parsedown = new Parsedown();
+        // Convert the post body from markdown to HTML using parsedown.
+        return Parsedown::instance()->parse($value);
+        
+    }
 }
