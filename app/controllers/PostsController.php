@@ -113,7 +113,7 @@ class PostsController extends \BaseController {
 		else
 		{
 			$post->title = Input::get('title');
-			$post->body = Input::get('body');
+			// $post->renderBody(Input::get('body'));
 
 			$post->save();		
 			if(Input::hasFile('image') && Input::file('image')->isValid())

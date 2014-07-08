@@ -19,7 +19,7 @@
 				<div class="blog-post blog-single-post">
 					<div class="single-post-title">
 						<h3>{{{ $post->title }}}</h3>
-						<h5>Author: {{{ $post->user->email }}}</h3>
+						<h5>{{{$post->user->first_name . " " . $post->user->last_name . " (" . $post->user->email . ")"}}}</h3>
 					</div>
 					<div class="single-post-info">
 						<i class="glyphicon glyphicon-time"></i>{{{ $post->created_at->format('l, F jS Y @ h:i:s A')}}} <a href="#" title="Show Comments"><i class="glyphicon glyphicon-comment"></i>11</a>

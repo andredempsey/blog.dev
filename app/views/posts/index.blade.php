@@ -24,15 +24,12 @@
 					    <!-- Sidebar -->
 						<div class="col-sm-5 blog-sidebar" style="margin-bottom:800px">
 							<h4>Search our Blog</h4>
-							{{ Form::model($posts, array('action' => array('PostsController@index'), 'method' => 'GET')) }}
-								{{Form::label('title','Title Search', array('class' => 'form-group'))}}
+							{{ Form::model($posts, array('action' => array('PostsController@index'), 'method' => 'GET', 'class' => 'form-search')) }}
 								@if ($isFiltered) 
 									{{link_to_action('PostsController@index', 'Show All')}}
 								@endif
-								{{Form::text('searchTitle', null, array('class' => 'form-control', 'id' => 'appendedInputButtons'))}}
-									<span class="input-group-btn">
-										{{Form::Submit('Search', array('class' => 'btn btn-md pull-right', 'id' => 'submit'))}}
-									</span>
+								{{Form::text('searchTitle', null, array('class' => 'search-query', 'id' => 'appendedInputButtons', 'placeholder' => 'Blog Title'))}}
+										{{Form::Submit('Search', array('class' => 'search-query', 'id' => 'submit'))}}
 							{{Form::close()}}
 							<h4>Recent Posts</h4>
 							<ul class="recent-posts">
@@ -61,6 +58,7 @@
 							<div class="blog-post">
 								<!-- Post Info -->
 								<div class="post-info">
+									{{{substr($post->user->first_name, 0, 1) . ". " . $post->user->last_name}}}
 									<div class="post-date">
 										<div class="date">{{ $post->created_at->format('F jS Y @ h:i:s A')}}</div>
 									</div>
