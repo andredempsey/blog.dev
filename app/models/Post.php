@@ -25,11 +25,13 @@ class Post extends BaseModel {
 		$this->img_path = '/' . $this->imgDir . '/' . $imageName;
 	}
 
-    public function getBodyAttribute($value)
+    public function renderBody()
     {
-        $Parsedown = new Parsedown();
         // Convert the post body from markdown to HTML using parsedown.
-        return Parsedown::instance()->parse($value);
+        $dirtyHTML = Parsedown::instance()->parse($this->body);
+        $config = HTMLPurifier_Config::createDefault();
+        $purifier = new HTMLPurifier($config);
+        return $purifier->purify($dirtyHTML);
         
     }
 }

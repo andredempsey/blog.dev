@@ -82,7 +82,7 @@
 								</div>
 								<div class="post-summary">
 									<p>
-										{{substr($post->body, 0, 150)}}
+										{{substr($post->renderBody(), 0, 150)}}
 									</p>
 								</div>
 								<!-- End Post Title & Summary -->

@@ -1,5 +1,5 @@
 <?php
-require_once '../vendor/ezyang/htmlpurifier/library/HTMLPurifier.auto.php';
+// require_once '../vendor/ezyang/htmlpurifier/library/HTMLPurifier.auto.php';
 class PostsController extends \BaseController {
 
 	public function __construct()
@@ -96,9 +96,6 @@ class PostsController extends \BaseController {
 		$messageValue = 'Post successfully added!';
 		$eMessageValue = 'There was a problem adding the post.';
 		$post = new Post();
-	    $config = HTMLPurifier_Config::createDefault();
-	    $purifier = new HTMLPurifier($config);
-
 		$post->user_id = Auth::user()->id;
 		if ($id!=null) 
 		{
@@ -116,8 +113,7 @@ class PostsController extends \BaseController {
 		else
 		{
 			$post->title = Input::get('title');
-			$post->body = $purifier->purify(Input::get('body'));
-
+			$post->body = Input::get('body');
 			$post->save();		
 			if(Input::hasFile('image') && Input::file('image')->isValid())
 			{
