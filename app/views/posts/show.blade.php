@@ -25,7 +25,11 @@
 						<i class="glyphicon glyphicon-time"></i>{{{ $post->created_at->format('l, F jS Y @ h:i:s A')}}} <a href="#" title="Show Comments"><i class="glyphicon glyphicon-comment"></i>11</a>
 					</div>
 					<div class="single-post-image">
-						<img src="/img/blog-large.jpg" alt="Post Title">
+						@if($post->img_path)
+							<img src="{{{$post->img_path}}}" class="img-responsive" alt="Post Title">
+						@else 
+							<img src="/img/blog-large.jpg" class="img-responsive" alt="Post Title">
+						@endif
 					</div>
 					<div class="single-post-content">
 						<p>{{ $post->body }}

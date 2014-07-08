@@ -22,16 +22,16 @@
 		    	<div class="container">
 					<div class="row">
 					    <!-- Sidebar -->
-						<div class="col-sm-4 blog-sidebar">
+						<div class="col-sm-5 blog-sidebar" style="margin-bottom:800px">
 							<h4>Search our Blog</h4>
 							{{ Form::model($posts, array('action' => array('PostsController@index'), 'method' => 'GET')) }}
 								{{Form::label('title','Title Search', array('class' => 'form-group'))}}
 								@if ($isFiltered) 
-									<button type="button" class="btn btn-default pull-right">{{link_to_action('PostsController@index', 'Show All')}}</button>
+									{{link_to_action('PostsController@index', 'Show All')}}
 								@endif
-								{{Form::text('searchTitle', null, array('class' => 'form-control input-md', 'id' => 'appendedInputButtons'))}}
+								{{Form::text('searchTitle', null, array('class' => 'form-control', 'id' => 'appendedInputButtons'))}}
 									<span class="input-group-btn">
-										{{Form::Submit('Search', array('class' => 'btn btn-md', 'id' => 'submit'))}}
+										{{Form::Submit('Search', array('class' => 'btn btn-md pull-right', 'id' => 'submit'))}}
 									</span>
 							{{Form::close()}}
 							<h4>Recent Posts</h4>
@@ -57,7 +57,7 @@
 						<!-- End Sidebar -->
 						<!-- Post -->
 						@foreach ($posts as $post)
-						<div class="col-md-4">
+						<div class="col-md-7">
 							<div class="blog-post">
 								<!-- Post Info -->
 								<div class="post-info">
@@ -70,7 +70,13 @@
 								</div>
 								<!-- End Post Info -->
 								<!-- Post Image -->
-								<img src="img/blog1.jpg" class="post-image" alt="Post Title">
+								<div class="crop">
+								@if($post->img_path)
+									<img src="{{{$post->img_path}}}" class="img-responsive img" alt="Post Title">
+								@else 
+									<img src="/img/blog-large.jpg" class="img-responsive img" alt="Post Title">
+								@endif
+								</div>
 								<!-- End Post Image -->
 								<!-- Post Title & Summary -->
 								<div class="post-title">
@@ -78,12 +84,12 @@
 								</div>
 								<div class="post-summary">
 									<p>
-										{{{substr($post->body, 0, 100)}}}
+										{{{substr($post->body, 0, 150)}}}
 									</p>
 								</div>
 								<!-- End Post Title & Summary -->
 								<div class="post-more">
-									{{link_to_action('PostsController@show', 'Read more...', array($post->id))}}
+									{{link_to_action('PostsController@show', 'Read ...', array($post->id))}}
 								</div>
 							</div>
 						</div>

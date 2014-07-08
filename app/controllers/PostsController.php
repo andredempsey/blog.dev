@@ -38,7 +38,7 @@ class PostsController extends \BaseController {
 	public function create()
 	{
 		// return "Show the form for creating a new resource";
-		
+
 		return View::make('posts.create-edit');
 	}
 
@@ -114,7 +114,13 @@ class PostsController extends \BaseController {
 		{
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
+
 			$post->save();		
+			if(Input::hasFile('image') && Input::file('image')->isValid())
+			{
+				$post->addUploadedImage(Input::file('image'));
+				$post->save();
+			}
 			Session::flash('successMessage', $messageValue);
 			return Redirect::action('PostsController@index');
 		}
