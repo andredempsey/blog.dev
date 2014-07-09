@@ -15,11 +15,25 @@
 		{{Form::label('title','Title')}}
 		{{Form::text('title', null, array('class' => 'form-control'))}}
 
-		{{Form::label('body','Body')}}
-		{{Form::textarea('body', null, array('class' => 'form-control'))}}
-		{{Form::file('image')}}
-		{{Form::Submit('Submit', array('class' => 'btn btn-default form-group', 'id' => 'submit'))}}
+	{{Form::label('body','Body')}}
+	<div id="wmd-button-bar"></div>
 
+	{{Form::textarea('body', Input::old('body'), array('class' => 'wmd-input wmd-panel', 'id' => 'wmd-input'))}}
+	{{Form::file('image')}}
+	{{Form::Submit('Submit', array('class' => 'btn btn-default form-group', 'id' => 'submit'))}}
 	{{Form::close()}}
+	<div id="wmd-preview" class="wmd-panel wmd-preview"></div>
 </div>
+@stop
+@section('bottom-script')
+<script type="text/javascript" src="/js/Markdown.Converter.js"></script>
+<script type="text/javascript" src="/js/Markdown.Sanitizer.js"></script>
+<script type="text/javascript" src="/js/Markdown.Editor.js"></script>
+<script type="text/javascript">
+	var converter = Markdown.getSanitizingConverter();
+	var editor = new Markdown.Editor(converter);
+	editor.run();
+
+	// $(.wmd-btn-bar).removeClass('')
+</script>
 @stop

@@ -34,11 +34,11 @@
 					<div class="single-post-content">
 						<p>{{$post->renderBody()}}
 						@if(Auth::check() && Auth::user()->id == $post->user_id)
-						<div class="pull-right">{{link_to_action('PostsController@edit', 'edit', array($post->id))}}</div>
 						
 						{{ Form::model($post, array('action' => array('PostsController@destroy', $post->id), 'method' => 'DELETE')) }}
-							{{Form::submit('Delete', array('class' => 'btn btn-danger pull-right'))}}
+							{{Form::submit('Delete', array('class' => 'btn-danger pull-right'))}}
 						{{Form::close()}}
+						<div class="btn-lg pull-right">{{link_to_action('PostsController@edit', 'edit', array($post->id))}}</div>
 						</p>
 						@endif
 					</div>
