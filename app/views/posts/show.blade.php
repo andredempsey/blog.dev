@@ -21,8 +21,7 @@
 					<div class="single-post-title">
 						<h3>{{{ $post->title }}}</h3>
 						<h5>{{{$post->user->first_name . " " . $post->user->last_name . " (" . $post->user->email . ")"}}}</h3>
-					@if(Auth::check() && (Auth::user()->id == $post->user_id) || Auth::user()->is_admin == 1)
-					
+					@if(Auth::check() && (Auth::user()->id == $post->user_id || Auth::user()->is_admin))
 						{{ Form::model($post, array('action' => array('PostsController@destroy', $post->id), 'method' => 'DELETE')) }}
 							{{Form::submit('Delete', array('class' => 'btn-danger pull-right'))}}
 						{{Form::close()}}

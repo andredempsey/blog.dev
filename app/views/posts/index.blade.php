@@ -22,7 +22,7 @@
 		    	<div class="container">
 					<div class="row">
 					    <!-- Sidebar -->
-						<div class="col-sm-5 blog-sidebar" style="margin-bottom:1000px">
+						<div class="col-sm-5 blog-sidebar">
 							<h4>Search our Blog</h4>
 							{{ Form::model($posts, array('action' => array('PostsController@index'), 'method' => 'GET', 'class' => 'form-search')) }}
 								@if ($isFiltered) 
@@ -54,7 +54,7 @@
 						<!-- End Sidebar -->
 						<!-- Post -->
 						@foreach ($posts as $post)
-						<div class="col-md-7">
+						<div class="col-md-7 pull-right">
 							<div class="blog-post">
 								<!-- Post Info -->
 								<div class="post-info">
@@ -82,12 +82,12 @@
 								</div>
 								<div class="post-summary">
 									<p>
-										{{substr($post->renderBody(), 0, 150)}}
+										{{substr($post->renderBody(), 0, 150) . ' ...'}}
 									</p>
 								</div>
 								<!-- End Post Title & Summary -->
 								<div class="post-more">
-									{{link_to_action('PostsController@show', 'Read ...', array($post->id))}}
+									<a href="{{action('PostsController@show', array($post->id))}}" class="btn btn-default"><span class="glyphicon glyphicon-book"></span> Read More</a>
 								</div>
 							</div>
 						</div>

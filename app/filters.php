@@ -56,6 +56,23 @@ Route::filter('auth.basic', function()
 
 /*
 |--------------------------------------------------------------------------
+| Protect Posts Filter
+|--------------------------------------------------------------------------
+|
+|
+*/
+
+Route::filter('post.protect', function($route)
+{
+	$id = $route->getParameters('posts');
+	$post = Post::findOrFail($id);
+	Session::flash('errorMessage', "Insufficient privileges.");
+	return (Auth::check() && (Auth::user()->id == $post->user_id || Auth::user()->is_admin));
+});
+
+
+/*
+|--------------------------------------------------------------------------
 | Guest Filter
 |--------------------------------------------------------------------------
 |
@@ -64,6 +81,7 @@ Route::filter('auth.basic', function()
 | response will be issued if they are, which you may freely change.
 |
 */
+
 
 Route::filter('guest', function()
 {
