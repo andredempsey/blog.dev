@@ -1,4 +1,3 @@
-
 .wmd-button-bar 
 {
     width: 100%;
@@ -9,6 +8,7 @@
 { 
     height: 300px;
     width: 100%;
+    background-color: Gainsboro;
     border: 1px solid DarkGray;
 }
 
@@ -72,6 +72,9 @@
 {
     left: 300px;
 }
+
+
+
 
 .wmd-prompt-background
 {

@@ -22,7 +22,7 @@
 		    	<div class="container">
 					<div class="row">
 					    <!-- Sidebar -->
-						<div class="col-sm-5 blog-sidebar" style="margin-bottom:800px">
+						<div class="col-sm-5 blog-sidebar" style="margin-bottom:1000px">
 							<h4>Search our Blog</h4>
 							{{ Form::model($posts, array('action' => array('PostsController@index'), 'method' => 'GET', 'class' => 'form-search')) }}
 								@if ($isFiltered) 
