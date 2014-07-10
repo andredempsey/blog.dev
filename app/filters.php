@@ -62,13 +62,16 @@ Route::filter('auth.basic', function()
 |
 */
 
-Route::filter('post.protect', function($route)
-{
-	$id = $route->getParameters('posts');
-	$post = Post::findOrFail($id);
-	Session::flash('errorMessage', "Insufficient privileges.");
-	return (Auth::check() && (Auth::user()->id == $post->user_id || Auth::user()->is_admin));
-});
+// Route::filter('post.protect', function($route)
+// {
+// 	$id = $route->getParameters('posts');
+// 	$post = Post::findOrFail($id);
+// 	if (!(Auth::check() && (Auth::user()->id == $post->user_id || Auth::user()->is_admin)))
+// 	{
+// 		Session::flash('errorMessage', 'Insufficient privileges');
+// 	}
+// 	return (Auth::check() && (Auth::user()->id == $post->user_id || Auth::user()->is_admin));
+// });
 
 
 /*

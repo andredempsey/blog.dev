@@ -35,7 +35,6 @@
 									<div class="clearfix"></div>
 								</div>
 							{{Form::close()}}
-							
 						</div>
 					</div>
 					<div class="col-sm-7 social-login">

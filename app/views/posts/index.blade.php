@@ -62,9 +62,6 @@
 									<div class="post-date">
 										<div class="date">{{ $post->created_at->format('F jS Y @ h:i:s A')}}</div>
 									</div>
-									<div class="post-comments-count">
-										<a href="page-blog-post-right-sidebar.html" title="Show Comments"><i class="glyphicon glyphicon-comment icon-white"></i>11</a>
-									</div>
 								</div>
 								<!-- End Post Info -->
 								<!-- Post Image -->
@@ -87,7 +84,7 @@
 								</div>
 								<!-- End Post Title & Summary -->
 								<div class="post-more">
-									<a href="{{action('PostsController@show', array($post->id))}}" class="btn btn-default"><span class="glyphicon glyphicon-book"></span> Read More</a>
+									<a href="{{action('PostsController@show', array($post->id))}}" class="btn btn-default"><span class="glyphicon glyphicon-book"></span> Continue Reading</a>
 								</div>
 							</div>
 						</div>

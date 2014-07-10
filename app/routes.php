@@ -22,11 +22,15 @@ Route::resource('posts', 'PostsController');
 
 Route::get('/orm-test', 'PostsController');
 
-Route::get('/Login', 'HomeController@showLogin');
+Route::get('/login', 'HomeController@showLogin');
 
-Route::post('/Login', 'HomeController@doLogin');
+Route::post('/login', 'HomeController@doLogin');
 
-Route::get('/Logout', 'HomeController@logout');
+Route::get('/logout', 'HomeController@logout');
+
+Route::get('/register', 'HomeController@showRegister');
+
+Route::post('/register', 'HomeController@doRegister');
 
 
 

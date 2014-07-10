@@ -16,10 +16,7 @@
                 <li>{{link_to_action('PostsController@index', 'Blog')}}</li>
                 <li>{{link_to_action('HomeController@showPortfolio', 'Portfolio')}}</li>
                 <li>{{link_to_action('HomeController@showResume', 'Resume')}}</li>
-                <li><a href="page-products-3-columns.html">eShop</a></li>
                 <li><a href="page-services-3-columns.html">Services</a></li>
-                <li><a href="page-pricing.html">Pricing</a></li>
-                <li><a href="page-faq.html">FAQ</a></li>
               </ul>
             </div>
             

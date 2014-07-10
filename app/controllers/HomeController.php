@@ -20,6 +20,18 @@ class HomeController extends BaseController {
 		return View::make('home');
 	}
 
+	public function showRegister()
+	{
+		return View::make('register');
+	}
+	public function doRegister()
+	{
+		$email = Input::get('email');
+		$password = Input::get('password');
+		// Session::flash('errorMessage', 'Passwords do not match.  Please try again.');
+		return View::make('login');
+	}
+
 	public function showLogin()
 	{
 		return View::make('login');

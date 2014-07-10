@@ -11,7 +11,7 @@ class PostsController extends \BaseController {
 	    $this->beforeFilter('auth', array('except' => array('index', 'show')));
 
 	   	// run post.protect filter to check for privileges before edit, update, and destroy methods
-	    $this->beforeFilter('post.protect', array('on' => array('edit', 'update', 'destroy')));
+	    // $this->beforeFilter('post.protect', array('only' => array('edit', 'update', 'destroy')));
 	}
 
 	/**
@@ -80,7 +80,15 @@ class PostsController extends \BaseController {
 	public function edit($id)
 	{
 		$post = Post::findOrFail($id);
-	    return View::make('posts.create-edit')->with('post', $post);
+		if(Auth::check() && (Auth::user()->id == $post->user_id || Auth::user()->is_admin))
+		{
+		    return View::make('posts.create-edit')->with('post', $post);
+		}
+		else
+		{
+			Session::flash('errorMessage', 'Insufficient privileges.');
+			return Redirect::action('PostsController@show', $id);
+		}
 	}
 
 
@@ -94,14 +102,21 @@ class PostsController extends \BaseController {
 	{
 		$messageValue = 'Post successfully added!';
 		$eMessageValue = 'There was a problem adding the post.';
-		$post = new Post();
-		$post->user_id = Auth::user()->id;
+
 		if ($id!=null) 
 		{
 			$messageValue = 'Post was successfully updated!';
 			$eMessageValue = 'There was a problem updating your post.';
 			$post = Post::findOrFail($id);
+			if(!(Auth::check() && (Auth::user()->id == $post->user_id || Auth::user()->is_admin)))
+			{
+				Session::flash('errorMessage', 'Insufficient privileges.');
+				return Redirect::action('PostsController@show', $id);
+			}
 		}
+
+		$post = new Post();
+		$post->user_id = Auth::user()->id;
 
 		$validator = Validator::make(Input::all(), Post::$rules);
 		if ($validator->fails()) 
@@ -133,9 +148,17 @@ class PostsController extends \BaseController {
 	public function destroy($id)
 	{
 		$post = Post::findOrFail($id);
-		$post->delete();
-		Session::flash('successMessage', 'Post was successfully deleted!');
-		return Redirect::action('PostsController@index');
+		if(Auth::check() && (Auth::user()->id == $post->user_id || Auth::user()->is_admin))
+		{
+			$post->delete();
+			Session::flash('successMessage', 'Post was successfully deleted!');
+			return Redirect::action('PostsController@index');
+		}
+		else
+		{
+			Session::flash('errorMessage', 'Insufficient privileges.');
+			return Redirect::action('PostsController@show', $id);
+		}
 	}
 
 	
