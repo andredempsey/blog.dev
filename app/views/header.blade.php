@@ -61,10 +61,11 @@
                       <li>{{link_to_action('HomeController@showResume', 'About Us')}}</li>
                       <li><a href="page-contact-us.html">Contact Us</a></li>
                       <li><a href="page-faq.html">Frequently Asked Questions</a></li>
+                      <li>{{link_to_action('HomeController@showAdmin', 'Admin Area')}}</li>
                       <li><a href="page-login.html">Login</a></li>
                       <li><a href="page-register.html">Register</a></li>
                       <li><a href="page-password-reset.html">Password Reset</a></li>
-                      <li><a href="page-terms-privacy.html">Terms & Privacy</a></li>
+                      <li>{{link_to_action('HomeController@showTermsPrivacy', 'Terms & Privacy')}}</li>
                       <li><a href="page-coming-soon.html">Coming Soon</a></li>
                     </ul>
                   </div>

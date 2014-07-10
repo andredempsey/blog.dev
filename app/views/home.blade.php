@@ -9,7 +9,7 @@
 			<!-- Slide Intro -->
 			<li class="bg4">
 				<!-- Slide Title -->
-				<h2 class="title">A@IT Innovations, LLC</h2>
+				<h2 class="title">AaIT Innovations, LLC</h2>
 				<!-- Slide Text -->
 				<h3 class="subtitle">We work hard to bring you innovative solutions.</h3>
 				<!-- Slide Image -->

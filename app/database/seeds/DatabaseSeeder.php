@@ -26,6 +26,7 @@ class UserTableSeeder extends Seeder {
         $user->email = 'admin@codeup.com';
         $user->password = Hash::make('adminPass123!');
         $user->is_admin = True;
+         $user->is_subscribed = False;
         $user->save();
         $firsts = ['Noah', 'Liam', 'Jacob', 'Mason', 'William', 'Ethan', 'Michael', 'Alexander', 'Jayden', 'Daniel', 
         'Sophia', 'Emma', 'Olivia', 'Isabella', 'Ava', 'Mia', 'Emily', 'Abigail', 'Madison', 'Elizabeth'];
@@ -42,6 +43,7 @@ class UserTableSeeder extends Seeder {
             $user->first_name = $first;
             $user->last_name = $last;
             $user->is_admin = False;
+            $user->is_subscribed = True;
             $user->save();
         }
 

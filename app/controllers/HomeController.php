@@ -24,12 +24,42 @@ class HomeController extends BaseController {
 	{
 		return View::make('register');
 	}
+	public function showAdmin()
+	{
+		if(Auth::check() && (Auth::user()->is_admin))
+		{
+			return View::make('errors.admin');
+		}
+		else
+		{
+			Session::flash('errorMessage', 'Insufficient Privileges.');
+			return Redirect::action('HomeController@showLogin');
+		}	
+	}
 	public function doRegister()
 	{
-		$email = Input::get('email');
-		$password = Input::get('password');
-		// Session::flash('errorMessage', 'Passwords do not match.  Please try again.');
-		return View::make('login');
+		$messageValue = 'Successfully registered!';
+		$eMessageValue = 'There was a problem registering.';
+		$user = new User();
+
+		$validator = Validator::make(Input::all(), User::$user_rules);
+		if ($validator->fails()) 
+		{
+			Session::flash('errorMessage', $eMessageValue);
+			return Redirect::back()->withInput()->withErrors($validator);
+		}
+		else
+		{
+			$user->first_name = Input::get('firstname');
+			$user->last_name = Input::get('lastname');
+			$user->email = Input::get('email');
+			$user->password = Hash::make(Input::get('password'));
+			$user->is_admin = False;
+			$user->is_subscribed = Input::get('newsletter');
+			$user->save();		
+			Session::flash('successMessage', $messageValue);
+			return Redirect::action('HomeController@showLogin');
+		}
 	}
 
 	public function showLogin()
@@ -37,6 +67,10 @@ class HomeController extends BaseController {
 		return View::make('login');
 	}
 
+	public function showTermsPrivacy()
+	{
+		return View::make('terms-privacy');
+	}
 	public function doLogin()
 	{
 		$email = Input::get('email');

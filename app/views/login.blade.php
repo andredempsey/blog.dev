@@ -45,7 +45,7 @@
 						</div>
 						<div class="clearfix"></div>
 						<div class="not-member">
-							<p>Not a member? <a href="page-register.html">Register here</a></p>
+							<p>Not a member? {{ link_to_action('HomeController@showRegister', 'Register Here') }}</p>
 						</div>
 					</div>
 				</div>

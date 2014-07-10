@@ -32,5 +32,9 @@ Route::get('/register', 'HomeController@showRegister');
 
 Route::post('/register', 'HomeController@doRegister');
 
+Route::get('/terms-privacy', 'HomeController@showTermsPrivacy');
+
+Route::get('/admin', 'HomeController@showAdmin');
+
 
 

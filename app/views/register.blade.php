@@ -15,6 +15,9 @@
 <div class="section">
 	<div class="container">
 		<div class="row">
+			@foreach($errors->all() as $error)
+	            <li>{{ ($error=='The password2 and password must match.')?'The passwords do not match':$error}}</li>
+	        @endforeach
 			<div class="col-sm-5">
 				<div class="basic-login">
 					{{Form::open(array('action'=>'HomeController@doRegister', 'class' => 'form-signin', 'role' => 'form'))}}
