@@ -15,8 +15,7 @@
               <ul class="no-list-style footer-navigate-section">
                 <li>{{link_to_action('PostsController@index', 'Blog')}}</li>
                 <li>{{link_to_action('HomeController@showPortfolio', 'Portfolio')}}</li>
-                <li>{{link_to_action('HomeController@showResume', 'Resume')}}</li>
-                <li><a href="page-services-3-columns.html">Services</a></li>
+                <li>{{link_to_action('HomeController@showResume', 'About Us')}}</li>
               </ul>
             </div>
             

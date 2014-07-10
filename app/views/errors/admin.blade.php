@@ -18,25 +18,8 @@
 		    <!-- Sidebar -->
 			<div class="col-sm-4 blog-sidebar">
 				<h4>User Management</h4>
-				<ul class="recent-posts">
-					<li><a href="#">Lorem ipsum dolor sit amet</a></li>
-					<li><a href="#">Sed sit amet metus sit</a></li>
-					<li><a href="#">Nunc et diam volutpat tellus ultrices</a></li>
-					<li><a href="#">Quisque sollicitudin cursus felis</a></li>
 				<h4>Post Management</h4>
-				<ul class="recent-posts">
-					<li><a href="#">Lorem ipsum dolor sit amet</a></li>
-					<li><a href="#">Sed sit amet metus sit</a></li>
-					<li><a href="#">Nunc et diam volutpat tellus ultrices</a></li>
-					<li><a href="#">Quisque sollicitudin cursus felis</a></li>
-				</ul>
 				<h4>Comment Management</h4>
-				<ul class="blog-categories">
-					<li><a href="#">Lorem ipsum</a></li>
-					<li><a href="#">Sed sit amet metus</a></li>
-					<li><a href="#">Nunc et diam </a></li>
-					<li><a href="#">Quisque</a></li>
-				</ul>
 			</div>
 			<!-- End Sidebar -->
 			<!-- Dashboard -->
@@ -48,16 +31,19 @@
 						<th>Last Name</th>
 						<th>Email</th>
 						<th>Posts</th>
-						<th>Edit</th>
+						<th>Remove</th>
 					</tr>
 					<tr>
-						<td>First</td>
-						<td>Last</td>
-						<td>Email</td>
-						<td><button>Post</button></td>
-						<td><button>Edit</button></td>
+						@foreach ($users as $user) 
+						<td>{{{$user->first_name}}}</td>
+						<td>{{{$user->last_name}}}</td>
+						<td>{{{$user->email}}}</td>
+						<td><button>View Posts</button></td>
+						<td><button>Remove</button></td>
 					</tr>
+					@endforeach
 				</table>
+				<div class="text-center">{{ $users->links() }}</div>
 			</div>
 			<!-- End Dashboard -->
 		</div>

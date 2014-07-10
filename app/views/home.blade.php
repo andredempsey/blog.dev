@@ -106,7 +106,7 @@
 					<blockquote>
 						<!-- Quote -->
 						<p class="quote">
-                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut."
+                            "Hi! I look forward to serving your consulting, web development, and/or training needs.  Please be patient as we add new content (including samples of our work in the Portfolio section).  Send me an email if you have questions or would like help on your important project."
                 		</p>
                 		<!-- Author Info -->
                 		<cite class="author-info">
@@ -123,70 +123,4 @@
 </div>
 <!-- End Team -->
 
-
-<!-- Pricing Table -->
-<div class="section">
-	<div class="container">
-		<h2>Pricing</h2>
-    	<div class="row">
-    		<!-- Pricing Plans Wrapper -->
-    		<div class="pricing-wrapper col-md-12">
-				<!-- Pricing Plan -->
-				<div class="pricing-plan">
-					<!-- Pricing Plan Ribbon -->
-					<h2 class="pricing-plan-title">Hourly Rate</h2>
-					<p class="pricing-plan-price">$50<span>/hr</span></p>
-					<!-- Pricing Plan Features -->
-					<ul class="pricing-plan-features">
-						<li>Consulting</li>
-						<li>Web Development</li>
-						<li>Training</li>
-					</ul>
-					<a href="index.html" class="btn">Order Now</a>
-				</div>
-				<!-- End Pricing Plan -->
-			    <div class="pricing-plan">
-					<div class="ribbon-wrapper">
-						<div class="price-ribbon ribbon-red">Popular</div>
-					</div>
-					<h2 class="pricing-plan-title">Single Web Page Site</h2>
-					<p class="pricing-plan-price">$229<span> flat rate</span></p>
-						<ul class="pricing-plan-features">
-							<li><strong>Includes hosting</strong> for 1 year</li>
-							<li>(up to 5 hours effort)</li>
-							<li>add'l billed at hourly rate</li>
-						</ul>
-					<a href="index.html" class="btn">Order Now</a>
-			    </div>
-			    <!-- Promoted Pricing Plan -->
-			    <div class="pricing-plan pricing-plan-promote">
-						<h2 class="pricing-plan-title">Full Service Web Site</h2>
-						<p class="pricing-plan-price">$99<span>/mo</span></p>
-						<ul class="pricing-plan-features">
-							<li><strong>Unlimited</strong> users</li>
-							<li><strong>Unlimited</strong> projects</li>
-							<li><strong>100GB</strong> storage</li>
-						</ul>
-					<a href="index.html" class="btn">Order Now</a>
-			    </div>
-			    <div class="pricing-plan">
-			    	<!-- Pricing Plan Ribbon -->
-					<div class="ribbon-wrapper">
-						<div class="price-ribbon ribbon-green">New</div>
-					</div>
-					<h2 class="pricing-plan-title">Mega</h2>
-					<p class="pricing-plan-price">$199<span>/mo</span></p>
-						<ul class="pricing-plan-features">
-							<li><strong>Unlimited</strong> users</li>
-							<li><strong>Unlimited</strong> projects</li>
-							<li><strong>100GB</strong> storage</li>
-						</ul>
-					<a href="index.html" class="btn">Order Now</a>
-			    </div>
-    		</div>
-    		<!-- End Pricing Plans Wrapper -->
-    	</div>
-	</div>
-</div>
-<!-- End Pricing Table -->
 @stop

@@ -34,7 +34,7 @@
 							{{Form::text('email', null, array('class' => 'form-control'))}}
 						</div>
 						<div class="form-group">
-							{{Form::label('password', 'Password', array('class' => 'icon-lock'))}}
+							{{Form::label('password', 'Password (min 6 chars)', array('class' => 'icon-lock'))}}
 							<br>
 							{{Form::password('password', null, array('class' => 'form-control'))}}
 						</div>

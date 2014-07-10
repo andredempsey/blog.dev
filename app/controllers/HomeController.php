@@ -28,7 +28,11 @@ class HomeController extends BaseController {
 	{
 		if(Auth::check() && (Auth::user()->is_admin))
 		{
-			return View::make('errors.admin');
+			$users = User::paginate(8);
+			$data = [
+			'users' => $users
+		];
+			return View::make('errors.admin')->with($data);
 		}
 		else
 		{

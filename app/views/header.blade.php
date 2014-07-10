@@ -33,9 +33,6 @@
             <li>
               <a href="{{{ action('HomeController@showHomePage') }}}">Home</a>
             </li>
-            <li>
-              <a href="features.html">Services</a>
-            </li>
             <li class="has-submenu active">
               <a href="#">Site Map</a>
               <div class="mainmenu-submenu">
@@ -44,11 +41,6 @@
                     <h4>Homepage</h4>
                     <ul>
                       <li>{{link_to_action('HomeController@showHomePage', 'Home')}}</li>
-                    </ul>
-                    <h4>Services & Pricing</h4>
-                    <ul>
-                      <li><a href="page-services-3-columns.html">Services/Features (3 Columns)</a></li>
-                      <li><a href="page-pricing.html">Pricing Table</a></li>
                     </ul>
                   </div>
                   <div>
@@ -59,21 +51,16 @@
                     <h4>General Pages</h4>
                     <ul>
                       <li>{{link_to_action('HomeController@showResume', 'About Us')}}</li>
-                      <li><a href="page-contact-us.html">Contact Us</a></li>
-                      <li><a href="page-faq.html">Frequently Asked Questions</a></li>
                       <li>{{link_to_action('HomeController@showAdmin', 'Admin Area')}}</li>
-                      <li><a href="page-login.html">Login</a></li>
-                      <li><a href="page-register.html">Register</a></li>
-                      <li><a href="page-password-reset.html">Password Reset</a></li>
+                      <li>{{ link_to_action('HomeController@showLogin', 'Login') }}</li>
+                      <li>{{ link_to_action('HomeController@showRegister', 'New User') }}</li>
                       <li>{{link_to_action('HomeController@showTermsPrivacy', 'Terms & Privacy')}}</li>
-                      <li><a href="page-coming-soon.html">Coming Soon</a></li>
                     </ul>
                   </div>
                   <div>
                     <h4>Blog</h4>
                     <ul>
                       <li>{{link_to_action('PostsController@index', 'Blog')}}</li>
-                      <li><a href="page-news.html">Latest & Featured News</a></li>
                     </ul>
                   </div>
                 </div><!-- /mainmenu-submenu-inner -->
