@@ -38,11 +38,11 @@
 						</div>
 					</div>
 					<div class="col-sm-7 social-login">
-						<p>Or login with your Facebook or Twitter</p>
+						<!-- <p>Or login with your Facebook or Twitter</p>
 						<div class="social-login-buttons">
 							<a href="#" class="btn-facebook-login">Login with Facebook</a>
 							<a href="#" class="btn-twitter-login">Login with Twitter</a>
-						</div>
+						</div> -->
 						<div class="clearfix"></div>
 						<div class="not-member">
 							<p>Not a member? {{ link_to_action('HomeController@showRegister', 'Register Here') }}</p>

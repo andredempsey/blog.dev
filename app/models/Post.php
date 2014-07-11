@@ -34,4 +34,31 @@ class Post extends BaseModel {
         return $purifier->purify($dirtyHTML);
         
     }
+    public function setSlugAttribute($value)
+    {
+        $value = str_replace(' ', '-', trim($value));
+        $this->attributes['slug'] = strtolower($value);
+    }
+    public static function findBySlug($slug)
+    {
+        $post = self::where('slug', $slug)->first();
+        return ($post == null) ? App::abort(404) : $post;
+
+    }
+
+    // Post::recentPosts();
+    public static function recentPosts()
+    {
+        return self::with('user')->take(4)->orderBy('created_at', 'desc')->get();
+    }
+
+    public static function filteredPosts($searchTitle = null)
+    {
+        return self::with('user')->where('title', 'LIKE', '%' . $searchTitle . '%')->orderBy('created_at', 'desc')->paginate(4);
+    }
+
+    public static function countPosts($searchTitle = null)
+    {
+        return count(self::where('title', 'LIKE', '%' . $searchTitle . '%')->orderBy('created_at', 'desc')->get());
+    }
 }

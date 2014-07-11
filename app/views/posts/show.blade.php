@@ -25,7 +25,7 @@
 						{{ Form::model($post, array('action' => array('PostsController@destroy', $post->id), 'method' => 'DELETE')) }}
 							{{Form::submit('Delete', array('class' => 'btn-danger pull-right'))}}
 						{{Form::close()}}
-						<button class="btn-success pull-right">{{link_to_action('PostsController@edit', 'edit', array($post->id))}}</button>
+						<button class="btn-success pull-right">{{link_to_action('PostsController@edit', 'edit', array($post->slug))}}</button>
 					@endif
 					</div>
 					<div class="single-post-info">

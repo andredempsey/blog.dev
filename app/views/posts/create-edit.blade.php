@@ -3,7 +3,7 @@
 <div class="container">
 	@if(isset($post))
 		<h3 id="topParagraph">Edit Post</h3>
-		{{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'PUT', 'files' => true)) }}
+		{{ Form::model($post, array('action' => array('PostsController@update', $post->slug), 'method' => 'PUT', 'files' => true)) }}
 	@else
 		<h3 id="topParagraph">New Post</h3>
 		{{Form::open(array('action'=>'PostsController@store', 'files' => true))}}

@@ -11,7 +11,7 @@
 				<!-- Slide Title -->
 				<h2 class="title">AaIT Innovations, LLC</h2>
 				<!-- Slide Text -->
-				<h3 class="subtitle">We work hard to bring you innovative solutions.</h3>
+				<h3 class="subtitle">Improving lives with innovative IT solutions.</h3>
 				<!-- Slide Image -->
 				<img class="slide-img" src="img/homepage-slider/slide3.png" alt="Slide 3" />
 			</li>
@@ -64,7 +64,7 @@
     	<div class="row">
     		<div class="col-md-4 col-sm-6">
     			<div class="service-wrapper">
-        			<img src="img/service-icon/diamond.png" alt="Service 1">
+        			<img src="img/service-icon/diamond.png" alt="Service 1" width=64px height=64px>
         			<h3>Consulting Services</h3>
         			<p>Innovative problem solving, process mapping/improvement, and project management.</p>
         			<a href="#" class="btn">Read more</a>

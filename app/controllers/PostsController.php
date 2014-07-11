@@ -23,12 +23,17 @@ class PostsController extends \BaseController {
 	{
 		$searchTitle = Input::get('searchTitle');
 		$isFiltered = ($searchTitle!='') ? True : False; 
-		$posts = Post::with('user')->where('title', 'LIKE', '%' . $searchTitle . '%')->orderBy('created_at', 'desc')->paginate(4);
-		$number = Post::count();
+		// $posts = Post::with('user')->where('title', 'LIKE', '%' . $searchTitle . '%')->orderBy('created_at', 'desc')->paginate(4);
+		$posts = Post::filteredPosts($searchTitle);
+		// $recentposts = Post::with('user')->take(4)->orderBy('created_at', 'desc')->get();
+		// $number = count(Post::with('user')->where('title', 'LIKE', '%' . $searchTitle . '%')->orderBy('created_at', 'desc')->get());
+		// $number = count($posts);
+		$number = Post::countPosts($searchTitle);
 		$data = [
 			'posts' => $posts,
 			'number'  => $number,
-			'isFiltered' => $isFiltered
+			'isFiltered' => $isFiltered,
+			// 'recentposts' => $recentposts
 		];
 	    return View::make('posts.index')->with($data);
 	}
@@ -55,6 +60,39 @@ class PostsController extends \BaseController {
 	{
 		// return "Store a newly created resource in storage.";
 		return $this->update(null);
+
+		// $messageValue = 'Post successfully added!';
+		// $eMessageValue = 'There was a problem adding the post.';
+
+		// // $post = Post::findBySlug($slug);
+		// $validator = Validator::make(Input::all(), Post::$rules);
+
+		// if ($validator->fails()) 
+		// {
+
+		// 	Session::flash('errorMessage', $eMessageValue);
+		// 	return Redirect::back()->withInput()->withErrors($validator);
+		// }
+		// else
+		// {
+			
+
+		// 		$post = new Post();
+		// 		$post->user_id = Auth::user()->id;
+				
+		// 	$post->title = Input::get('title');
+		// 	$post->body = Input::get('body');
+		// 	$post->slug = Input::get('title');
+		// 	$post->save();	
+
+		// 	if(Input::hasFile('image') && Input::file('image')->isValid())
+		// 	{
+		// 		$post->addUploadedImage(Input::file('image'));
+		// 		$post->save();
+		// 	}
+		// 	Session::flash('successMessage', $messageValue);
+		// 	return Redirect::action('PostsController@show', $post->slug);
+		// }
 	}
 
 
@@ -64,9 +102,9 @@ class PostsController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function show($slug)
 	{
-		$post = Post::find($id);
+		$post = Post::findBySlug($slug);
 	    return View::make('posts.show')->with('post', $post);
 	}
 
@@ -77,9 +115,9 @@ class PostsController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function edit($id)
+	public function edit($slug)
 	{
-		$post = Post::findOrFail($id);
+		$post = Post::findBySlug($slug);
 		if(Auth::check() && (Auth::user()->id == $post->user_id || Auth::user()->is_admin))
 		{
 		    return View::make('posts.create-edit')->with('post', $post);
@@ -87,7 +125,7 @@ class PostsController extends \BaseController {
 		else
 		{
 			Session::flash('errorMessage', 'Insufficient privileges.');
-			return Redirect::action('PostsController@show', $id);
+			return Redirect::action('PostsController@show', $slug);
 		}
 	}
 
@@ -98,27 +136,30 @@ class PostsController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update($slug)
 	{
-		$messageValue = 'Post successfully added!';
-		$eMessageValue = 'There was a problem adding the post.';
 
-		if ($id!=null) 
-		{
+		if (!isset($slug)) {
+			$post = new Post();
+			$post->user_id = Auth::user()->id;
+
+			$messageValue = 'Post successfully added!';
+			$eMessageValue = 'There was a problem adding the post.';
+		} else {
+			$post = Post::findBySlug($slug);
+
 			$messageValue = 'Post was successfully updated!';
 			$eMessageValue = 'There was a problem updating your post.';
-			$post = Post::findOrFail($id);
-			if(!(Auth::check() && (Auth::user()->id == $post->user_id || Auth::user()->is_admin)))
-			{
-				Session::flash('errorMessage', 'Insufficient privileges.');
-				return Redirect::action('PostsController@show', $id);
-			}
 		}
 
-		$post = new Post();
-		$post->user_id = Auth::user()->id;
-
+		if(!(Auth::check() && (Auth::user()->id == $post->user_id || Auth::user()->is_admin)))
+		{
+			Session::flash('errorMessage', 'Insufficient privileges.');
+			return Redirect::action('PostsController@index');
+		}
+		
 		$validator = Validator::make(Input::all(), Post::$rules);
+
 		if ($validator->fails()) 
 		{
 			Session::flash('errorMessage', $eMessageValue);
@@ -128,14 +169,17 @@ class PostsController extends \BaseController {
 		{
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
-			$post->save();		
+			$post->slug = Input::get('title');
+			$post->save();	
+
 			if(Input::hasFile('image') && Input::file('image')->isValid())
 			{
 				$post->addUploadedImage(Input::file('image'));
 				$post->save();
 			}
+
 			Session::flash('successMessage', $messageValue);
-			return Redirect::action('PostsController@index');
+			return Redirect::action('PostsController@show', $post->slug);
 		}
 	}
 
@@ -145,9 +189,9 @@ class PostsController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function destroy($id)
+	public function destroy($slug)
 	{
-		$post = Post::findOrFail($id);
+		$post = Post::findBySlug($slug);
 		if(Auth::check() && (Auth::user()->id == $post->user_id || Auth::user()->is_admin))
 		{
 			$post->delete();
@@ -157,7 +201,7 @@ class PostsController extends \BaseController {
 		else
 		{
 			Session::flash('errorMessage', 'Insufficient privileges.');
-			return Redirect::action('PostsController@show', $id);
+			return Redirect::action('PostsController@show', $slug);
 		}
 	}
 

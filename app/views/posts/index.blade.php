@@ -25,18 +25,19 @@
 						<div class="col-sm-5 blog-sidebar">
 							<h4>Search our Blog</h4>
 							{{ Form::model($posts, array('action' => array('PostsController@index'), 'method' => 'GET', 'class' => 'form-search')) }}
+								<div class="pull-right"><span class="badge">{{{$number . " posts"}}}</span></div>
 								@if ($isFiltered) 
 									{{link_to_action('PostsController@index', 'Show All')}}
 								@endif
 								{{Form::text('searchTitle', null, array('class' => 'search-query', 'id' => 'appendedInputButtons', 'placeholder' => 'Blog Title'))}}
-										{{Form::Submit('Search', array('class' => 'search-query', 'id' => 'submit'))}}
+								{{Form::Submit('Search', array('class' => 'search-query', 'id' => 'submit'))}}
 							{{Form::close()}}
 							<h4>Recent Posts</h4>
 							<ul class="recent-posts">
-								<li><a href="#">Lorem ipsum dolor sit amet</a></li>
-								<li><a href="#">Sed sit amet metus sit</a></li>
-								<li><a href="#">Nunc et diam volutpat tellus ultrices</a></li>
-								<li><a href="#">Quisque sollicitudin cursus felis</a></li>
+								@foreach (Post::recentPosts() as $recentpost)
+								<li>{{link_to_action('PostsController@show', $recentpost->title,array($recentpost->slug))}}
+									<h6><span class="date">Posted: {{ $recentpost->created_at->format('F jS Y @ h:i:s A')}}</span></h6></li>
+								@endforeach
 							</ul>
 							<h4>Categories</h4>
 							<ul class="blog-categories">
@@ -75,7 +76,7 @@
 								<!-- End Post Image -->
 								<!-- Post Title & Summary -->
 								<div class="post-title">
-									<h3>{{link_to_action('PostsController@show', $post->title,array($post->id))}}</h3>
+									<h3>{{link_to_action('PostsController@show', $post->title, array($post->slug))}}</h3>
 								</div>
 								<div class="post-summary">
 									<p>
@@ -84,7 +85,7 @@
 								</div>
 								<!-- End Post Title & Summary -->
 								<div class="post-more">
-									<a href="{{action('PostsController@show', array($post->id))}}" class="btn btn-default"><span class="glyphicon glyphicon-book"></span> Continue Reading</a>
+									<a href="{{action('PostsController@show', array($post->slug))}}" class="btn btn-default"><span class="glyphicon glyphicon-book"></span> Continue Reading</a>
 								</div>
 							</div>
 						</div>

@@ -4,7 +4,8 @@
             <div class="menuextras">
           <div class="extras">
             <ul>
-              <li>
+              <li><span class="glyphicon glyphicon-user"></span></li> 
+              <!-- <li>
                 <div class="dropdown choose-country">
                   <a class="#" data-toggle="dropdown" href="#"><img src="/img/flags/us.png" alt="United States"> US</a>
                   <ul class="dropdown-menu" role="menu">
@@ -14,7 +15,7 @@
                     <li role="menuitem"><a href="#"><img src="/img/flags/fr.png" alt="France"> FR</a></li>
                   </ul>
                 </div>
-              </li>
+              </li> -->
               @if(!Auth::check())
                     <!-- <li>{{ HTML::link('users/register', 'Register') }}</li>    -->
                     <li>{{ link_to_action('HomeController@showLogin', 'Login') }}</li>
@@ -29,7 +30,8 @@
             </div>
             <nav id="mainmenu" class="mainmenu">
           <ul>
-            <li class="logo-wrapper"><a href="index.html"><img src="/img/aaitlogo.png" alt="AaIT Innovations, LLC"></a></li>
+            <li><h4>AaIT Innovations, LLC</h4></li>
+            <li class="logo-wrapper"><a href="{{action('HomeController@showHomePage')}}"><img src="/img/aaitlogo.png" alt="AaIT Innovations, LLC"></a></li>
             <li>
               <a href="{{{ action('HomeController@showHomePage') }}}">Home</a>
             </li>
