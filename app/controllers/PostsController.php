@@ -139,13 +139,16 @@ class PostsController extends \BaseController {
 	public function update($slug)
 	{
 
-		if (!isset($slug)) {
+		if (!isset($slug)) 
+		{
 			$post = new Post();
 			$post->user_id = Auth::user()->id;
 
 			$messageValue = 'Post successfully added!';
 			$eMessageValue = 'There was a problem adding the post.';
-		} else {
+		} 
+		else 
+		{
 			$post = Post::findBySlug($slug);
 
 			$messageValue = 'Post was successfully updated!';
@@ -157,7 +160,7 @@ class PostsController extends \BaseController {
 			Session::flash('errorMessage', 'Insufficient privileges.');
 			return Redirect::action('PostsController@index');
 		}
-		
+
 		$validator = Validator::make(Input::all(), Post::$rules);
 
 		if ($validator->fails()) 
@@ -201,7 +204,7 @@ class PostsController extends \BaseController {
 		else
 		{
 			Session::flash('errorMessage', 'Insufficient privileges.');
-			return Redirect::action('PostsController@show', $slug);
+			return Redirect::action('PostsController@index');
 		}
 	}
 
