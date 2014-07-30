@@ -12,45 +12,54 @@
 		</div>
 	<div class="col-sm-10 pull-right">
 		<h3 id="topParagraph">Summary:</h3>
-		<p>Experienced professional consultant, web/database developer, data analyst, and veteran Air Force officer  
-		<span>with 20+ years’ experience successfully leading people in program, project, and facility management activities</span>
-		<span>at all organizational levels.  Expert problem solver, process improver, and project manager with experience developing business solutions </span>
-		<span>in HTML/CSS, Bootstrap, PHP, Laravel, JavaScript, JQuery, and MS Office Enterprise applications.</span>
+		<p>I am a self-starter who brings a passion for transcending customer expectations by super charging their processes with innovative solutions.  As an experienced professional consultant, web/database developer, Project Management Professional, and veteran Air Force officer (20+ years); I understand how to analyze processes, uncover problems, communicate tasks, and build full stack web solutions.  I taught myself MS Access with which I built many innovative, database applications that successfully automated tedious, time consuming processes.  I am excited to build even smarter solutions using my recently learned web development skills (Laravel, PHP, MySQL, JQuery, Ajax, HTML5, and CSS).</p>
 
+		<h3>Education:</h3>
+		<ul>
+			<li>Master of Science, Engineering Management, Air Force Institute of Technology</li>
+			<li>Bachelor of Science, Electrical Engineering, University of Arkansas</li>
+			<li>Air War College (Executive Level Military Leadership Course)</li>
+			<li>Air Command & Staff College (Mid-Level Military Leadership Course)</li>
+			<li>Squadron Officers School (Entry-Level Military Leadership Course)</li>
+		</ul>
 		<h3>Experience:</h3>
-		<span class='companyName'>MWH Global, <span class='location'>San Antonio, TX</span> </span><span class='dates pull-right'>Jun 2012 – Apr 2014</span><br>
+
+		<span class='companyName'>MWH Global, <span class='location'>San Antonio, TX</span> </span><span class='dates pull-right'>2012 – 2014</span><br>
 		<span class='jobTitle'>Infrastructure Data Management Specialist</span> 
 		<p class='accomplishment'>
+		Primarily responsible for maintenance, deployment and implementation of new features for the Asset Management information management system (A-File) used by the US Air Force, Air National Guard, and Air Force Reserves.</p>
 			<ul class="accomplishments">
-				<li class="bulletAccomplish">Coordinated several significant A-File template reconfigurations.</li>
-				<li class="bulletAccomplish">Revised the A-File database schema to overcome MS Access size limitations and accommodate additional data.  Solution helped alleviate chronic issues corrupted databases during weekly database. </li>
-				<li class="bulletAccomplish">Built numerous infrastructure investment data analyses and led numerous client technical sessions to advise client on asset management processes. </li>
-				<li class="bulletAccomplish">Proactively developed asset management decision tool (AMDT) to improve MWH’s ability to analyze and present client data.</li>
-			</ul>
-		</p>
-		      
-		<span class='companyName'>Booz Allen Hamilton (Client:  HQ 502 Air Base Wing) <span class='location'>San Antonio, TX</span> </span><span class='dates pull-right'>Sep 2010 to May 2012</span><br>
-		<span class='jobTitle'>Associate (Management Consulting)</span>
-		<p class='accomplishment'>
-			<ul class="accomplishments">
-				<li class="bulletAccomplish">Developed local guidelines for measuring the Joint Base Common Output Level Standards (JB COLS) across three installations within the 502 ABW of Joint Base San Antonio (JBSA).</li>
-				<li class="bulletAccomplish">Developed MS Access solution to collect quarterly inputs and produce automated PowerPoint slide presentation for JB COLS management review meeting. </li>
-				<li class="bulletAccomplish">Analyzed migrated data from the Army’s Integrated Facilities System (IFS) database to the Air Forces ACES real property database.  Identified anomalies and coordinated with Air Force database experts to implement corrections.</li>
+				<li class="bulletAccomplish">Led the on-time delivery of several significant client-requested A-File feature upgrades</li>
+				<li class="bulletAccomplish">Solved critical MS Access size limitation and data corruption issue by developing and implementing an improved database schema</li>
+				<li class="bulletAccomplish">Developed numerous (40+) infrastructure investment data analyses which help AF decision makers better invest constrained resources</li>
+				<li class="bulletAccomplish">Designed and built the Asset Management Decision Tool to improve MWH’s ability to analyze, recommend, and present solutions;  conceived/built on my own initiative and time in MS Access </li>
+				<li class="bulletAccomplish">Trained hundreds of Air Force engineers to use the A-File and Asset Management principles</li>
 			</ul>
 		</p>
 
-		<span class='companyName'> <span class='location'>JB Balad, Iraq </span> </span><span class='dates pull-right'>Oct 2009 to Apr 2010</span><br>
+		<span class='companyName'>Booz Allen Hamilton (Client:  HQ 502 Air Base Wing) <span class='location'>San Antonio, TX</span> </span><span class='dates pull-right'>2010 to 2012</span><br>
+		<span class='jobTitle'>Associate (Management Consulting)</span>
+		<p class='accomplishment'>
+			Supported the Joint Base San Antonio civil engineer community with advisory and assistance services as a member of the 502 Air Base Wing civil engineering headquarters staff.
+			<ul class="accomplishments">
+				<li class="bulletAccomplish">Developed local guidelines for measuring the Joint Base Common Output Level Standards (JB COLS) across three installations within the 502 ABW of Joint Base San Antonio (JBSA).</li>
+				<li class="bulletAccomplish">Developed MS Access solution to collect quarterly inputs and produce automated PowerPoint slide presentation for JB COLS management review meeting.</li>
+				<li class="bulletAccomplish">Built MS Access application which implemented the One Page Project Manager concepts and automatically built PowerPoint output; design consideration was to use tools currently installed on government computers</li>
+				<li class="bulletAccomplish">Analyzed migrated data from the Army’s Integrated Facilities System (IFS) database to the Air Forces ACES real property database.  Identified anomalies and coordinated with Air Force database experts to implement corrections.</li>
+				<li class="bulletAccomplish">Developed MS Access database to manage a comprehensive review of service contracts.  Application was used during meetings to present detailed data and immediately document decisions</li>
+			</ul>
+		</p>
+		<span class='companyName'> <span class='location'>JB Balad, Iraq </span> </span><span class='dates pull-right'>2009 to 2010</span><br>
 		<span class='jobTitle'>Facilities Engineer Team Chief</span> 
 		<p class='accomplishment'>
 			<ul class="accomplishments">
 				<li class="bulletAccomplish">Led 9 engineers in rapid development of 129 plans, designs, statements of work, and cost estimates for school refurbishments, canal repairs, road improvements, development plans, bridges
 		and other repairs worth $42M in essential infrastructure for the people of Iraq.</li>
 				<li class="bulletAccomplish">Developed project management plan for transitioning a limited 90 engineer, decentralized engineering function to a centrally managed, 180 person countrywide engineering support organization which will execute plans for the withdrawal of forces from Iraq.
-		</li>
 			</ul>
 		</p>
 
-		<span class='companyName'>HQ Air Education Training Command <span class='location'>Randolph AFB, TX</span> </span><span class='dates pull-right'>Jun 2008 to Jul 2010</span><br>
+		<span class='companyName'>HQ Air Education Training Command <span class='location'>Randolph AFB, TX</span> </span><span class='dates pull-right'>2008 to 2010</span><br>
 		<span class='jobTitle'>Operations Support Section Chief</span> 
 		<p class='accomplishment'>
 			<ul class="accomplishments">
@@ -59,7 +68,7 @@
 			</ul>
 		</p>
 
-		<span class='companyName'>US Army Corps of Engineers, Gulf Region Division <span class='location'>Baghdad, Iraq </span> </span><span class='dates pull-right'>Jun 2007 to Dec 2007</span><br>
+		<span class='companyName'>US Army Corps of Engineers, Gulf Region Division <span class='location'>Baghdad, Iraq </span> </span><span class='dates pull-right'>2007 to 2007</span><br>
 		<span class='jobTitle'>Program Manager</span> 
 		<p class='accomplishment'>
 			<ul class="accomplishments">
@@ -69,7 +78,7 @@
 			</ul>
 		</p>
 
-		<span class='companyName'>HQ United States Air Forces Europe<span class='location'>Ramstein AB, GE</span> </span><span class='dates pull-right'>Jun 2005 to Jun 2008</span><br>
+		<span class='companyName'>HQ United States Air Forces Europe<span class='location'>Ramstein AB, GE</span> </span><span class='dates pull-right'>2005 to 2008</span><br>
 		<span class='jobTitle'>Chief, Housing Branch</span> 
 		<p class='accomplishment'>
 			<ul class="accomplishments">
@@ -82,7 +91,7 @@
 			</ul>
 		</p>
 
-		<span class='companyName'>AF Civil Engineer & Services School<span class='location'>Wright Patterson AFB, OH</span> </span><span class='dates pull-right'>Mar 2003 to Jun 2005</span><br>
+		<span class='companyName'>AF Civil Engineer & Services School<span class='location'>Wright Patterson AFB, OH</span> </span><span class='dates pull-right'>2003 to 2005</span><br>
 		<span class='jobTitle'>Director, Readiness Management Dept</span> 
 		<p class='accomplishment'>
 			<ul class="accomplishments">
@@ -92,16 +101,45 @@
 				<li class="bulletAccomplish">Recognized by the Commandant of the Air Force Institute of Technology as the #1 field grade officer (Majors & Lieutenant Colonels) for 2003.</li>
 			</ul>
 		</p>
-		<h3>Education:</h3>
+		<h3>Projects:</h3>
+		<p class='accomplishment'>
+			<ul class="accomplishments">
+			<li class="bulletAccomplish">Tweets for Charity (Laravel, PHP, MySQL, HTML, CSS, Ajax, JQuery, and Bootstrap)</li>
+			<li class="bulletAccomplish">AaIT Innovations Web Site ((Laravel, PHP, MySQL, HTML, CSS, and Bootstrap)
+</li>
+			<li class="bulletAccomplish">Whack a Mole (HTML, CSS, JQuery), Black Jack, Anagram, Diceware, Play Parser, etc (PHP)
+</li>
+			<li class="bulletAccomplish">Asset Management Decision Tool (MS Access, MS Excel, MS PowerPoint)
+</li>
+			<li class="bulletAccomplish">Portfolio Generator (MS Access, MS PowerPoint)
+</li>
+			<li class="bulletAccomplish">Dashboard Generator (MS Access, MS Excel)
+</li>
+			<li class="bulletAccomplish">One Page Project Manager (MS Access, MS PowerPoint)
+</li>
+			<li class="bulletAccomplish">JB COLS Tool (MS Access, MS PowerPoint)
+</li>
+			<li class="bulletAccomplish">CPVF Tool (MS Access, MS PowerPoint)
+</li>
+			<li class="bulletAccomplish">MILCON Manager (MS Access)
+</li>
+			<li class="bulletAccomplish">FindlT (MS Access)
+</li>
+			<li class="bulletAccomplish">ReportIT (MS Access)
+</li>
+			<li class="bulletAccomplish">Superior Performers Tool (MS Access)
+</li>
+			<li class="bulletAccomplish">ATSO Event Pro (MS Access, MS Excel, MS PowerPoint)
+</li>
+			<li class="bulletAccomplish"><strong>Let me add YOUR project to the list!!</strong>
+</li>
 
-		<ul>
-			<li>MS, Engineering Management, Air Force Institute of Technology</li>
-			<li>BS, Electrical Engineering, University of Arkansas</li>
-			<li>Air War College (Executive Level Military Leadership Course)</li>
-			<li>Air Command & Staff College (Mid-Level Military Leadership Course)</li>
-			<li>Squadron Officers School (Entry-Level Military Leadership Course)</li>
-		</ul>
+			</ul>
+
+		
+	
 	</div>
-	</div>
+
+</div>
 </div>
 @stop
