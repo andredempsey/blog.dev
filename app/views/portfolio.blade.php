@@ -20,13 +20,13 @@
       <div class="col-md-4 col-sm-6">
         <div class="portfolio-item">
           <div class="portfolio-image">
-            <a href="page-portfolio-item.html"><img src="img/portfolio1.jpg" alt="Project Name"></a>
+            <a href="page-portfolio-item.html"><img src="img/whack.png" alt="Whack-a-Mole"></a>
           </div>
           <div class="portfolio-info">
             <ul>
-              <li class="portfolio-project-name">Project Name</li>
-              <li>Website design & Development</li>
-              <li>Client: Some Client LTD</li>
+              <li class="portfolio-project-name">Whack-a-Mole</li>
+              <li>Web Browser Game</li>
+              <li>JQuery, HTML5, CSS</li>
               <li class="read-more"><a href="page-portfolio-item.html" class="btn">Read more</a></li>
             </ul>
           </div>
