@@ -30,7 +30,7 @@
             </div>
             <nav id="mainmenu" class="mainmenu">
           <ul>
-            <li class="logo-wrapper"><a href="{{action('HomeController@showHomePage')}}"><img src="/img/aaitlogo.png" alt="AaIT Innovations, LLC"></a></li>
+            <li style="padding-bottom: 9px" class="logo-wrapper"><a href="{{action('HomeController@showHomePage')}}"><img src="/img/aaitlogo.png" alt="AaIT Innovations, LLC"></a></li>
             <li style="padding-left: 12px"><h4>AaIT Innovations, LLC</h4></li>
             <li>
               <a href="{{{ action('HomeController@showHomePage') }}}">Home</a>
