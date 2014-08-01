@@ -15,6 +15,7 @@
 
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/pagedown.css">
+        <link href="/img/aaitlogo_24x24.png" rel="shortcut icon" type="image/x-icon">
 
     </head>
 <body>
